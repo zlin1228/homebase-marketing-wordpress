@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Layout | Homebase Styleguide</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.typekit.net/isr4wgv.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand medium" href="#">homebase</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="layout.html">Layout <span class="sr-only">(current)</span></a></li>
+            <li><a href="utilities.html">Utilities <span class="sr-only">(current)</span></a></li>
+            <li><a href="modules.html">Modules <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="main">
+        <div class="components">
+          <h1 class="mbl">Layout</h1>
+          <ul class="list-inline">
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#spacing-helpers">Spacing Helpers</a></li>
+          </ul>
+
+          <section id="colors" class="component-details ptxl">
+            <p><h3>Colors</h3></p>
+            <div class="color-list">
+              <div class="color mbxs">
+                <div class="color__block bg--pink text-center">$pink<p class="text--white">#A969A9</p></div>
+              </div>
+              <div class="color mbxs">
+                <div class="color__block bg--purple text-center">$purple<p class="text--white">#8A5EA6</p></div>
+              </div>
+              <div class="color mbxs">
+                <div class="color__block bg--gray-light text-center text--gray-dark">$gray-light<p class="text--gray-dark">#F9F9FB</p></div>
+              </div>
+              <div class="color mbxs">
+                <div class="color__block bg--blue text-center">$blue<p class="text--white">#39ACBF</p></div>
+              </div>
+              <div class="color mbxs">
+                <div class="color__block bg--navy-light text-center">$navy-light<p class="text--white">#5F6A7D</p></div>
+              </div>
+              <div class="color mbxs">
+                <div class="color__block bg--navy text-center">$navy<p class="text--white">#2E3F48</p></div>
+              </div>
+              <div class="color mbxs">
+                <div class="color__block bg--gray-dark text-center">$gray-dark<p class="text--white">#959eac</p></div>
+              </div>
+
+              <div class="color mbxs">
+                <div class="color__block bg--green text-center">$green<p class="text--white">#60b86b</p></div>
+              </div>
+
+              <div class="color mbxs">
+                <div class="color__block bg--orange text-center">$orange<p class="text--white">#fb9253</p></div>
+              </div>
+
+              <div class="color mbxs">
+                <div class="color__block bg--red text-center">$red<p class="text--white">#F44322</p></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="grid" class="component-details ptxl">
+            <p><h3>Grid</h3></p>
+            <p>Our grid system is based on Twitter Bootstrap. Please refer to <a href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a></p>
+
+            <div class="row">
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+              <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">.col-md-8</div>
+              <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">.col-md-6</div>
+              <div class="col-md-6">.col-md-6</div>
+            </div>
+          </section>
+
+          <section id="spacing-helpers" class="component-details ptxl">
+            <p><h3>Spacing Helpers</h3></p>
+            <h5 class="regular">Introducing a new way of adding whitespace...</h5>
+            <p>Syntax: <code>&lt;padding|margin&gt;&lt;location&gt;&lt;size&gt;</code></p>
+            <p>Use these to modify the space between elements.</p>
+            
+            <div class="mbm">
+              <p><h5>Types</h5><p>
+              <ul class="unstyled-list">
+                <li>p - Padding</li>
+                <li>m - Margin</li>
+              </ul>
+            </div>
+
+            <div class="mbm">
+              <p><h5>Locations</h5><p>
+              <ul class="unstyled-list">
+                <li>a - All</li>
+                <li>t - Top</li>
+                <li>r - Right</li>
+                <li>b - Bottom</li>
+                <li>l - Left</li>
+                <li>h - Horizontal</li>
+                <li>v - Vertical</li>
+              </ul>
+            </div>
+
+            <div class="mbm">
+              <p><h5>Sizes</h5><p>
+              <ul class="unstyled-list">
+                <li>n    - none (0px)</li>
+                <li>xxxs - xxx-small (3px)</li>
+                <li>xxs  - xx-small (7px)</li>
+                <li>xs   - x-small (10px)</li>
+                <li>s    - small (15px)</li>
+                <li>m    - medium (20px)</li>
+                <li>l    - large (25px)</li>
+                <li>xl   - x-large (30px)</li>
+                <li>xxl  - xx-large (40px)</li>
+                <li>xxxl - x-large (60px)</li>
+              </ul>
+            </div>
+
+            <div class="mbm">
+              <p><h5>Examples</h5><p>
+              <pre>
+&lt;!-- Add medium size padding to all sides --!&gt;
+&lt;div class="pam"&gt;&lt;/div&gt;
+
+&lt;!-- Add large size margin to right side --!&gt;
+&lt;div class="mrl"&gt;&lt;/div&gt;
+
+&lt;!-- Add x-small padding to top and bottom (vertical) --!&gt;
+&lt;div class="pvxs"&gt;&lt;/div&gt;
+
+&lt;!-- Remove left and right margins (horizontal) --!&gt;
+&lt;div class="hmn"&gt;&lt;/div&gt;
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="javascripts/bootstrap.min.js"></script> -->
+  </body>
+</html>

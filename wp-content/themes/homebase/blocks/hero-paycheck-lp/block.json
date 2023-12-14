@@ -1,0 +1,32 @@
+{
+    "name": "acf/hero-paycheck-lp",
+    "title": "Hero paycheck LP",
+    "description": "A custom Hero payckeck LP block.",
+    "style": "file:/hero-paycheck-lp.css",
+    "script": "block-hero-paycheck-lp",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["hero", "paycheck", "lp"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero-paycheck-lp.php"
+    }
+
+}

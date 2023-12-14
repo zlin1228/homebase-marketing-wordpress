@@ -1,0 +1,133 @@
+.successHero{
+	padding:0 0 110px;
+	text-align:center;
+	@media screen and (max-width: 960px){
+		padding-bottom:80px;
+	}
+	h1{
+		padding:0 0 24px;
+		font-weight:900;
+		font-size:44px;
+		line-height:48px;
+		color:#452F53;
+		@media screen and (max-width: 960px){
+			font-size:36px;
+			line-height:40px;
+		}
+	}
+	p{
+		font-size:22px;
+		line-height:32px;
+		color:#452F53;
+		@media screen and (max-width: 960px){
+			font-size:18px;
+			line-height:24px;
+		}
+	}
+	h1,
+	p{
+		@media screen and (max-width: 960px){
+			max-width:280px;
+			display:table;
+			margin:0 auto;
+		}
+	}
+	.container{
+		max-width:630px;
+	}
+	.col-inner{
+		padding-top:320px;
+	}
+	img{
+		max-width:353px;
+		position:absolute;
+		top:-12px;
+		left:50%;
+		transform:translate(-50%, 0);
+		@media screen and (max-width: 960px){
+			max-width:310px;
+		}
+	}
+}
+
+.quickLinks{
+	padding:80px 0;
+	background-color:#F6F7F7;
+	text-align:center;
+	margin:0 0 130px;
+	@media screen and (max-width: 960px){
+		margin-bottom:60px;
+	}
+	h2{
+		font-weight:900;
+		font-size:28px;
+		line-height:32px;
+		color:#452F53;
+		padding:0 0 16px;
+		@media screen and (max-width: 960px){
+			font-size:25px;
+			line-height:32px;
+		}
+	}
+	p{
+		font-size:22px;
+		line-height:32px;
+		color:#8746A8;
+		margin:0;
+		@media screen and (max-width: 960px){
+			font-size:18px;
+			line-height:24px;
+		}
+	}
+	h2,
+	p{
+		@media screen and (max-width: 960px){
+			max-width:250px;
+			display:table;
+			margin:0 auto;
+		}
+	}
+	.links{
+		padding:55px 0 0;
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-gap:80px;
+		@media screen and (max-width: 960px){
+			grid-gap:40px;
+		}
+		@media screen and (max-width: 760px){
+			grid-template-columns:1fr;
+		}
+		p{
+			font-size:22px;
+			line-height:32px;
+			font-weight:400;
+			color:#452F53;
+			display:table;
+			margin:0 auto;
+			max-width:218px;
+		}
+		a{
+			transition:all ease-in-out .3s;
+			opacity:1;
+			&:hover{
+				opacity:.8;
+			}
+		}
+	}
+	img{
+		display:table;
+		margin:0 auto 24px;
+	}
+	h5{
+		font-weight:700;
+		font-size:15px;
+		line-height:24px;
+		padding:16px 0 0;
+		margin:0;
+		color:#8746A8;
+	}
+	.container{
+		max-width:1000px;
+	}
+}

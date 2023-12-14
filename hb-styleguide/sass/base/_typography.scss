@@ -1,0 +1,62 @@
+h1, h2, h3, h4 {
+  margin: 0 0 16px 0;
+}
+
+h5, h6 {
+  margin: 0 0 12px 0;
+}
+
+p {
+  color: $navy-light;
+}
+
+.regular {
+  font-weight: $regular;
+}
+
+.medium {
+  font-weight: $medium;
+}
+
+.bold { 
+  font-weight: $bold; 
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.block-title {
+  color: $gray-dark;
+  text-transform: uppercase;
+  font-weight: $medium;
+  font-size: 0.9em;
+}
+
+.desc {
+  color: $gray-dark;
+}

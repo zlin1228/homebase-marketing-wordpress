@@ -1,0 +1,534 @@
+.section-paycheck-calculator {
+	padding: 0 0 111px;
+	position: relative;
+}
+
+.section-paycheck-calculator .container-narrow .titles {
+	margin-bottom: 25px;
+	display: flex;
+	padding: 10px 0;
+	gap: 80px;
+	color: var(--hb-dark-grey);
+	font-weight: 700;
+}
+
+.section-paycheck-calculator .container-narrow .titles .title {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-paycheck-calculator .container-narrow .titles.overtime {
+	display: none;
+	margin-bottom: 10px;
+	gap: 60px;
+	padding-right: 60px;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq {
+	margin-bottom: 25px;
+	display: flex;
+	background: #F0EBFF;
+	border-radius: 4px;
+	gap: 80px;
+	padding: 10px;
+	align-items: center;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq .date {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	gap: 20px;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq .date label {
+	padding: 10px;
+	color: #252525;
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq .date input {
+	padding: 10px;
+	border: 1px solid #E2E4E9;
+	border-radius: 4px;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	text-align: center;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq .freq {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	gap: 20px;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq .freq label {
+	padding: 10px;
+	color: #252525;
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .date-freq .freq select {
+	padding: 10px;
+	border-radius: 0;
+	border: 1px solid #E2E4E9;
+	border-radius: 4px;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	width: 100%;
+}
+
+.section-paycheck-calculator .container-narrow .regular {
+	margin-bottom: 35px;
+	display: flex;
+	background: #F0EBFF;
+	border-radius: 4px;
+	gap: 80px;
+	padding: 10px;
+	align-items: center;
+}
+
+.section-paycheck-calculator .container-narrow .regular .rate-reg {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.section-paycheck-calculator .container-narrow .regular .rate-reg label {
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .regular .rate-reg .wrapper {
+	gap: 10px;
+	align-items: center;
+	display: flex;
+	width: 100%;
+}
+
+.section-paycheck-calculator .container-narrow .regular .rate-reg .wrapper span {
+	color: #252525;
+}
+
+.section-paycheck-calculator .container-narrow .regular .rate-reg .wrapper input[type="number"] {
+	font-size: 15px;
+	line-height: 24px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #C3C2F1;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	border-radius: 4px;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg label {
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg .time {
+	width: 100%;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #C3C2F1;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	border-radius: 4px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg .time input {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	-moz-appearance: textfield;
+	padding: 0;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg .time input::-webkit-outer-spin-button, .section-paycheck-calculator .container-narrow .regular .hours-reg .time input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg .time input.hours {
+	text-align: right;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg input[type="time"] {
+	width: 100%;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #C3C2F1;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	border-radius: 4px;
+}
+
+.section-paycheck-calculator .container-narrow .regular .hours-reg input[type="time"]::-webkit-calendar-picker-indicator {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 10%;
+	left: 35%;
+}
+
+.section-paycheck-calculator .container-narrow .regular .gross-reg {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.section-paycheck-calculator .container-narrow .regular .gross-reg .gross-reg-title {
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .regular .gross-reg .gross-reg-val {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #252525;
+}
+
+.section-paycheck-calculator .container-narrow .addons {
+	margin-bottom: 35px;
+}
+
+.section-paycheck-calculator .container-narrow .addons .addon-title {
+	margin-bottom: 12px;
+	text-align: left;
+}
+
+.section-paycheck-calculator .container-narrow .addons .addon-title p {
+	margin: 0;
+	font-weight: 700;
+	color: #1B1C1E;
+}
+
+.section-paycheck-calculator .container-narrow .addons .checkboxes {
+	display: flex;
+	gap: 40px;
+	margin-bottom: 22px;
+}
+
+.section-paycheck-calculator .container-narrow .addons .checkboxes div {
+	display: flex;
+}
+
+.section-paycheck-calculator .container-narrow .addons .checkboxes label {
+	color: #1B1C1E;
+	margin-left: 1rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 500;
+}
+
+.section-paycheck-calculator .container-narrow .addons .checkboxes .over-check-container {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.section-paycheck-calculator .container-narrow .addons .checkboxes .over-check {
+	align-items: center;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item {
+	margin-bottom: 25px;
+	display: none;
+	gap: 20px;
+	align-items: center;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box {
+	flex: 1;
+	display: flex;
+	gap: 60px;
+	background: #F0EBFF;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over label {
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over .wrapper {
+	gap: 10px;
+	align-items: center;
+	display: flex;
+	width: 100%;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over .wrapper span {
+	color: #252525;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over .wrapper input[type="number"] {
+	font-size: 15px;
+	line-height: 24px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #C3C2F1;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	border-radius: 4px;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over label {
+	display: none;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over .time {
+	width: 100%;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #C3C2F1;
+	box-shadow: 0px 4px 14px rgba(134, 141, 150, 0.25);
+	border-radius: 4px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over .time input {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	-moz-appearance: textfield;
+	padding: 0;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over .time input::-webkit-outer-spin-button, .section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over .time input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over .time input.hours {
+	text-align: right;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .close {
+	flex-grow: 0;
+	transform: rotate(45deg);
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-item .close:hover {
+	cursor: pointer;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-add {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	margin-bottom: 25px;
+	color: var(--hb-dark-grey);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-add img:hover {
+	cursor: pointer;
+}
+
+.section-paycheck-calculator .container-narrow .addons .over-add span:hover {
+	cursor: pointer;
+}
+
+.section-paycheck-calculator .container-narrow .totals {
+	background-color: #F0EBFF;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+}
+
+.section-paycheck-calculator .container-narrow .totals .top {
+	gap: 20px;
+	flex-direction: row-reverse;
+	display: flex;
+}
+
+.section-paycheck-calculator .container-narrow .totals .top .item {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	color: #252525;
+	gap: 10px;
+}
+
+.section-paycheck-calculator .container-narrow .totals .top .item span {
+	font-size: 28px;
+	line-height: 2rem;
+	font-weight: 700;
+}
+
+.section-paycheck-calculator .container-narrow .totals .bottom {
+	flex-direction: row-reverse;
+	display: flex;
+	text-align: right;
+	font-size: 13px;
+	line-height: 24px;
+	color: #252525;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	.section-paycheck-calculator {
+		padding-top: 0;
+	}
+
+	.section-paycheck-calculator .container-narrow .titles {
+		display: none !important;
+	}
+
+	.section-paycheck-calculator .container-narrow .date-freq {
+		flex-direction: column;
+		padding: 10px;
+		gap: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .date-freq .date {
+		flex-direction: column;
+		gap: 5px;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.section-paycheck-calculator .container-narrow .date-freq .date input {
+		text-align: left;
+	}
+
+	.section-paycheck-calculator .container-narrow .date-freq .date label {
+		display: block;
+	}
+
+	.section-paycheck-calculator .container-narrow .date-freq .freq {
+		flex-direction: column;
+		gap: 5px;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.section-paycheck-calculator .container-narrow .date-freq .freq label {
+		display: block;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .rate-reg {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .rate-reg label {
+		display: block;
+		padding: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .rate-reg .wrapper input[type="number"] {
+		text-align: left;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .hours-reg {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .hours-reg label {
+		display: block;
+		padding: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .hours-reg .time input {
+		min-width: 2ch;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .gross-reg {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .gross-reg .gross-reg-title {
+		display: block;
+		padding: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .regular .gross-reg .gross-reg-val {
+		padding: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item {
+		position: relative;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over {
+		flex-direction: column;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over label {
+		display: block;
+		padding: 10px;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over .wrapper {
+		padding: 25px 0;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .rate-over .wrapper input[type="number"] {
+		text-align: left;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over {
+		flex-direction: column;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over label {
+		display: block;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .box .hours-over .time input {
+		min-width: 2ch;
+	}
+
+	.section-paycheck-calculator .container-narrow .addons .over-item .close {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+}

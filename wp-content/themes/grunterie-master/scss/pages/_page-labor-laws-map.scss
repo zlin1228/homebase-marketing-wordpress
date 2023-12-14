@@ -1,0 +1,584 @@
+.labor-laws-map{
+    padding-top: 50px;
+    
+    .hero.without-picture .columns.small{
+        padding: 0 15px 40px;
+        
+        h1{
+            font-size: 33px;
+            line-height: 1.1;
+            
+            @media (max-width: 768px) { 
+                font-size: 25px;
+            }
+        }
+    } 
+    
+    .note{
+        p{
+            font-style: italic;
+            text-align: center;
+            margin: 50px 0 100px!important;
+        }
+    }
+    .map-container{
+        position: relative; 
+    }
+    
+    #map{
+        @media (max-width: 990px) { 
+            margin-bottom: -100px;
+        }
+        
+        text{
+            pointer-events: none;
+        }
+    }
+    .select-container{
+        margin-bottom: 20px;
+        position: relative;
+        
+        @media (min-width: 768px) { 
+            max-width: 343px;
+            margin: 0 auto;
+        }
+         
+        &:before{
+            content: "";
+            position: absolute;
+            top: 23px;
+            right: 17px;
+            width: 0; 
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #969BA0;
+            pointer-events: none;
+            
+            @media (min-width: 768px){
+                top: 19px;
+            }
+                
+                
+        }
+        
+        select{
+            font-size: 18px; 
+            height: 50px;
+            padding: 0 15px;
+            background: transparent;
+            color: #969BA0;
+            
+            @media (min-width: 768px) { 
+                height: 40px;
+            }
+        }
+        
+        p{
+            font-size: 14px;
+            color: #7C8288;
+            font-weight: 600;
+            text-align: center;
+            
+            @media (min-width: 768px){
+                display: none;
+            }
+        }
+    }
+    .state-description{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        width: 535px;
+        max-width: 100%;
+        background: #ffffff;
+        border-radius: 5px;
+        position: absolute;
+        padding: 20px;
+        box-shadow: 0 0 17px rgba(207, 183, 223, 0.3);
+        z-index: 9999;
+        
+        @media (max-width: 990px) { 
+            position: initial;
+            display: none;
+            box-shadow: none;
+            padding: 0;
+            text-align: center;
+            border-top: 1px solid #F3EEF6;
+            padding-top: 30px;
+            border-radius: 0;
+        }
+        
+        &:before{
+            content: "";
+            position: absolute;
+            top: -17px;
+            left: calc(50% - 50px);
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid #fff;
+            
+            @media (max-width: 990px) { 
+                display: none;
+            }
+        }
+        
+        .d-flex{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0 20px;
+            position: relative;
+            
+            @media (max-width: 990px) { 
+                align-items: center;
+                justify-content: center;
+            }
+            
+            &:after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: #F3EEF6;
+                top: 11px;
+                left: 0;
+                z-index: 0;
+                
+                @media (max-width: 990px) { 
+                    display: none;
+                }
+            }
+        }
+        
+        .state-name{
+            text-transform: uppercase;
+            color: #452F53;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            background: #fff;
+            z-index: 1;
+            padding-right: 10px;
+            
+            @media (max-width: 990px) { 
+                padding-right: 0;
+            }
+        }
+        
+        .initials{
+            color: #F3EEF6;
+            font-size: 50px;
+            font-weight: 800;
+            background: #fff;
+            position: relative;
+            z-index: 1;
+            padding-left: 10px;
+            
+            @media (max-width: 990px) { 
+                display: none;
+            }
+        }
+        
+        p{
+            font-size: 14px;
+            color: #626970;
+        }
+        
+        a{
+            font-size: 14px;
+            color: #8A59A9;
+            
+            &.button{
+                background: #8A59A9;
+                color: $white;
+                font-weight: 600;
+                margin: 10px 0 0;
+            }
+        }
+        
+        &.show{
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s;
+            
+            @media (max-width: 990px) { 
+                display: block;
+            }
+       }
+        
+        &.AK{
+            left: -4%;
+            top: 83%;
+            
+            &:before{
+                left: 20%;
+            }
+        }
+        &.CA{
+            left: -3%;
+            top: 50%;
+            
+            &:before{
+                left: 10%;
+            }
+        }
+    	&.NV{
+            left: -2%;
+            top: 43%;
+            
+            &:before{
+               left: 19%;
+            }
+        }
+    	&.OR{
+            left: -3%;
+            top: 25%;
+            
+            &:before{
+                left: 13%;
+            }
+        }
+    	&.WA{
+            left: -3%;
+            top: 13%;
+            
+            &:before{
+                left: 18%;
+            }
+        }
+        &.ID{
+            left: -2%;
+            top: 28%;
+            
+            &:before{
+                left: 29%;
+            }
+        }
+    	&.MT{
+            left: 0%;
+            top: 19%;
+        }
+    	&.WY{
+            left: 3%;
+            top: 35%;
+        }
+    	&.UT{
+            left: -4%;
+            top: 46%;
+            
+            &:before{
+                left: 38%;
+            }
+        }
+    	&.AZ{
+            left: -2%;
+            top: 63%;
+            
+            &:before{
+                left: 31%;
+            }
+        }
+    	&.CO{
+            left: 5%;
+            top: 48%;
+        }
+    	&.NM{
+            left: 3%;
+            top: 64%;
+        }
+    	&.TX{
+            left: 16%;
+            top: 78%;
+        }
+        &.OK{
+            left: 19.5%;
+            top: 62%;
+        }
+        &.KS{
+            top: 51%;
+            left: 18%;
+        }
+    	&.NE{
+            left: 16%;
+            top: 41%;
+        }
+    	&.SD{
+            left: 15%;
+            top: 31%;
+        }
+    	&.ND{    
+            left: 15.5%;
+            top: 20%;
+        }
+    	&.MN{
+            left: 24.5%;
+            top: 26%;
+        }
+    	&.IA{
+            left: 26%;
+            top: 39.5%;
+        }
+    	&.WI{
+            left: 33%;
+            top: 31%;
+        }
+    	&.IL{
+            left: 34.3%;
+            top: 46.5%;
+        }
+    	&.MO{
+            left: 29%;
+            top: 52%;
+        }
+    	&.AR{
+            left: 29%;
+            top: 65%;
+        }
+    	&.LA{
+            left: 29.5%;
+            top: 77%;
+        }
+    	&.MS{
+            left: 34.5%;
+            top: 72.5%;
+        }
+    	&.AL{
+            left: 40%;
+            top: 70.5%;
+        }
+        &.TN{
+            left: 39.5%;
+            top: 59.5%;
+        }
+    	&.KY{
+            left: 43%;
+            top: 53%;
+        }
+    	&.IN{
+            left: 39.5%;
+            top: 46%;
+        }
+    	&.MI{
+            left: 41.5%;
+            top: 35%;
+        }
+    	&.OH{
+            right: 0%;
+            top: 43%;
+        }
+        &.PA{
+            right: -4%;
+            top: 39%;
+            
+            &:before{
+                left: 49%;
+            }
+        }
+    	&.NY{
+            right: -3.5%;
+            top: 30%;
+            
+            &:before{
+                left: 56%;
+            }
+        }
+    	&.ME{
+            right: -4%;
+            top: 19%;
+            
+            &:before{
+                left: 71%;
+            }
+        }
+    	&.WV{
+            right: -4.5%;
+            top: 49%;
+        }
+    	&.VA{
+            right: -4.5%;
+            top: 50%;
+            
+            &:before{
+                left: 50%;
+            }
+        }
+    	&.NC{
+            right: -3.5%;
+            top: 58%;
+            
+            &:before{
+                left: 50%;
+            }
+        }
+    	&.SC{
+            right: -4%;
+            top: 64%;
+            
+            &:before{
+                left: 46%;
+            }
+        }
+    	&.GA{
+            right: -2%;
+            top: 70%;
+        }
+    	&.FL{
+            right: -4%;
+            top: 85%;
+            
+            &:before{
+                left: 47%;
+            }
+        }
+        &.NH{
+            right: -4%;
+            top: 24%;
+            
+            &:before{
+                left: 66%;
+            }
+        }
+        &.VT{
+            right: -3.5%;
+            top: 24%;
+            
+            &:before{
+                left: 63%;
+            }
+        }
+        &.MA{
+            right: -4%;
+            top: 28%;
+            
+            &:before{
+                left: 66%;
+            }
+        }
+        &.CT{
+            right: -3%;
+            top: 31%;
+            
+            &:before{
+                left: 65%;
+            }
+        }
+        &.RI{
+            right: -4%;
+            top: 30.5%;
+            
+            &:before{
+                left: 68.3%;
+            }
+        }
+        &.NJ{
+            right: -3%;
+            top: 38%;
+            
+            &:before{
+                left: 61%;
+            }
+        }
+        &.DE{
+            right: -3.5%;
+            top: 42%;
+            
+            &:before{
+                left: 59.5%;
+            }
+        }
+        &.MD{
+            right: -4%;
+            top: 42%;
+            
+            &:before{
+                left: 54.5%;
+            }
+        }
+        &.HI{
+            top: 92%;
+            left: 7%;
+        }
+
+        &.DC{
+            top: 5%;
+            left: 22%;
+        }
+
+    }
+    
+    .send-email-form{
+        .amp{
+            font-size: 14px;
+        }
+        
+        .ninja-forms-form{
+            max-width: 100%;
+            width: 100%;
+            
+            @media (min-width: 768px) { 
+                margin: 0 auto;
+                width: fit-content;
+            }
+        }
+        .ninja-forms-required-items, .ninja-forms-req-symbol{
+            display: none;
+        }
+        
+        .ninja-forms-all-fields-wrap{
+            @media (min-width: 768px) { 
+                display: flex;
+            }
+        }
+        
+        .ninja-forms-form-wrap input[type="text"], .ninja-forms-form-wrap select{
+            width: 100%;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid #D8D8D8 !important;
+            font-size: 16px;
+            border-radius: 2px;
+            margin-bottom: 0;
+            
+            @media (min-width: 768px) { 
+                width: 251px;
+                margin-right: 15px;
+            }
+        }
+        .label-above label {
+            margin-bottom: 0; 
+        }
+        input[type="submit"]{
+            margin: 0;
+            height: 40px;
+            line-height: 1;
+            border-radius: 5px;
+            border: 0 !important;
+            width: 100%;
+            
+            @media (min-width: 768px) { 
+                width: 40%;
+                margin: 0 5px;
+            }
+        }
+    }
+    
+    .signup-bumper-section{
+        margin: 0 auto 52px;
+        
+        form {
+            max-width: 90%;
+            margin: 0 auto 25px;
+
+            input, select{
+                @media (min-width: 768px) { 
+                    margin: 0 5px;
+                    height: 40px;
+                }
+            }
+        }
+    } 
+}

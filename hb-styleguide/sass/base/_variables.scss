@@ -1,0 +1,25 @@
+/* Typography Variables */
+
+$light: 300;
+$regular: 400;
+$light-medium: 500;
+$medium: 600;
+$bold: 700;
+$xbold: 900;
+
+$base-font-family: "proxima-nova", sans-serif;
+$base-font-weight: $regular;
+$base-line-height: 1.3;
+$text-color: $navy-light;
+
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+$header-font-weight: $bold;
+$header: $header-font-weight;
+
+$border-color: #EDEDED;
+
+$base-border-radius: 3px;
+

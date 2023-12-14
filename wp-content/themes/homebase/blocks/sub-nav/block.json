@@ -1,0 +1,32 @@
+{
+    "name": "acf/sub-nav",
+    "title": "Sub nav",
+    "description": "A custom Sub nav block.",
+    "style": "file:/sub-nav.css",
+    "script": "block-sub-nav",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["sub nav"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "sub-nav.php"
+    }
+
+}

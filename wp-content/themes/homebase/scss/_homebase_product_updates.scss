@@ -1,0 +1,173 @@
+.product-updates {
+	.section-hero {
+		padding: 5rem 0;
+		background-color: #452F53;
+		
+		.text-wrap {
+			text-align: left;
+			color: #ffffff;
+			padding-right: 5rem;
+
+			h3 {
+				color: #ffffff;
+				margin-top: 1rem;
+			}
+		}
+
+		.col-right {
+			height: 100%;
+		}
+
+		.img-wrap {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding-left: 5rem;
+			z-index: 1;
+		}
+	}
+
+	.product-updates-content {
+    padding-top: 5rem;
+    
+    a.back-all-link {
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+		ul.product-updates {
+			margin: 0;
+
+			> li {
+				display: block;
+				
+				&:not(:last-child) {
+					padding-bottom: 3.5rem;
+				}
+			}
+		}
+
+		#content {
+			padding: 0;
+		}
+
+		li.product-update-list {
+			border-bottom: none;
+
+			&:not(:first-child).bordered {
+				padding-top: 3.5rem;
+				border-top: 1px solid rgba(135, 70, 168, 0.4);
+			}
+		}
+	}
+
+	article {
+		max-width: 736px;
+		padding: 0;
+    border-bottom: none;
+    
+    h1.update-title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+		h2.update-title {
+			font-size: 1.5rem;
+			font-weight: bold;
+      line-height: 1.5rem;
+      color: #452F53;
+			margin-bottom: 1rem;
+		}
+
+		h2, h3, h4 {
+			font-size: 1rem;
+			font-weight: bold !important;
+    	line-height: 1.5rem;
+			margin-bottom: 0.5rem;
+			color: #8746A8;
+		}
+
+		.update-meta {
+			margin-bottom: .5rem;
+
+			span {
+				font-size: 14px;
+				line-height: 1.5rem;
+				color: #6d6868;
+			}
+		}
+
+		ul {
+			margin: 1.5rem 0;
+
+			li {
+				display: block;
+				margin-bottom: 1rem !important;
+				background-image: url(../images/checkmark-blue.svg);
+				background-repeat: no-repeat;
+				background-position: left top 6px;
+				padding-left: 2rem;
+			}
+		}
+
+		img {
+			margin: 1rem 0;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+.product-updates {
+  .section-hero {
+    padding: 3.75rem 0;
+
+    br {
+      display: block;
+    }
+
+    .text-wrap {
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+
+  article {
+    h1.update-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 20px;
+      line-height: 1.5rem;
+    }
+
+    img {
+      display: block;
+      margin: 1.5rem auto;
+    }
+
+    ul {
+      margin: 1rem 0;
+
+      li {
+        margin-bottom: 0.5rem !important;
+      }
+    } 
+
+  } 
+
+  .product-updates-content {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+
+    ul.product-updates > li:not(:last-child) {
+      padding-bottom: 2.5rem;
+    }
+
+    li.product-update-list:not(:first-child).bordered {
+      padding-top: 2.5rem;
+    }
+  }
+}
+}

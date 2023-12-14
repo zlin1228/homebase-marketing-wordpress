@@ -1,0 +1,147 @@
+<?php if (is_home() || is_page('pricing') || is_page_template( 'page-noheader.php' ) || is_page_template( 'page-pricing-detailed.php' ) ||is_singular('support') || is_archive() || is_search() ) { ?>
+
+  <header class="contain-to-grid show-for-small fixed nonstandard">
+  <!-- Starting the Top-Bar -->
+  <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+          <li class="name">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"></a>
+          </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+      <section class="top-bar-section">
+      <?php
+          wp_nav_menu( array(
+              'theme_location' => 'primary',
+              'container' => false,
+              'depth' => 0,
+              'items_wrap' => '<ul class="right">%3$s</ul>',
+              'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
+              'walker' => new reverie_walker( array(
+                  'in_top_bar' => true,
+                  'item_type' => 'li',
+                  'menu_type' => 'main-menu'
+              ) ),
+          ) );
+      ?>
+      <ul class="right">
+        <li><a href="http://app.joinhomebase.com" target="_blank">Sign In</a></li>
+        <li><a href="<?php echo get_site_url(); ?>/sign-up" target="_blank">Sign Up</a></li>
+      </ul>
+      </section>
+  </nav>
+  <!-- End of Top-Bar -->
+</header>
+
+<header class="contain-to-grid hide-for-small fixed nonstandard">
+  <!-- Starting the Top-Bar -->
+  <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+          <li class="name">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"></a>
+          </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <div class="right">
+          <?php
+              wp_nav_menu( array(
+                  'theme_location' => 'primary',
+                  'container' => false,
+                  'depth' => 0,
+                  'items_wrap' => '<ul>%3$s</ul>',
+                  'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
+                  'walker' => new reverie_walker( array(
+                      'in_top_bar' => true,
+                      'item_type' => 'li',
+                      'menu_type' => 'main-menu'
+                  ) ),
+              ) );
+          ?>
+          <ul>
+            <li class="action"><a href="http://app.joinhomebase.com" class="signin button" target="_blank">Sign In</a></li>
+            <li class="action"><a href="<?php echo get_site_url(); ?>/sign-up" target="_blank" class="signup button">Sign Up</a></li>
+          </ul>
+        </div>
+      </section>
+  </nav>
+  <!-- End of Top-Bar -->
+</header>
+
+<?php } elseif (is_page_template( 'page-clover.php' )) { ?>
+
+<?php } else { ?>
+
+  <header class="contain-to-grid show-for-small fixed standard reversed">
+  <!-- Starting the Top-Bar -->
+  <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+          <li class="name">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"></a>
+          </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+      <section class="top-bar-section">
+      <?php
+          wp_nav_menu( array(
+              'theme_location' => 'primary',
+              'container' => false,
+              'depth' => 0,
+              'items_wrap' => '<ul class="right">%3$s</ul>',
+              'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
+              'walker' => new reverie_walker( array(
+                  'in_top_bar' => true,
+                  'item_type' => 'li',
+                  'menu_type' => 'main-menu'
+              ) ),
+          ) );
+      ?>
+      <ul class="right">
+        <li><a href="http://app.joinhomebase.com" target="_blank">Sign In</a></li>
+        <li><a href="<?php echo get_site_url(); ?>/sign-up" target="_blank">Sign Up</a></li>
+      </ul>
+      </section>
+  </nav>
+  <!-- End of Top-Bar -->
+</header>
+
+<header class="contain-to-grid hide-for-small fixed standard reversed">
+  <!-- Starting the Top-Bar -->
+  <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+          <li class="name">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"></a>
+          </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <div class="right">
+          <?php
+              wp_nav_menu( array(
+                  'theme_location' => 'primary',
+                  'container' => false,
+                  'depth' => 0,
+                  'items_wrap' => '<ul>%3$s</ul>',
+                  'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
+                  'walker' => new reverie_walker( array(
+                      'in_top_bar' => true,
+                      'item_type' => 'li',
+                      'menu_type' => 'main-menu'
+                  ) ),
+              ) );
+          ?>
+          <ul>
+            <li class="action"><a href="http://app.joinhomebase.com" class="signin button" target="_blank">Sign In</a></li>
+            <li class="action"><a href="<?php echo get_site_url(); ?>/sign-up" target="_blank"class="signup button">Sign Up</a></li>
+          </ul>
+        </div>
+      </section>
+  </nav>
+  <!-- End of Top-Bar -->
+</header>
+
+<?php }?>

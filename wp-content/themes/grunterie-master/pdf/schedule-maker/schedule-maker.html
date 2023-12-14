@@ -1,0 +1,264 @@
+<html>
+    <head><title>Your schedule</title>
+    <style>
+       @page {
+            margin: 10mm 15mm;
+       }
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: helvetica;
+        }
+        * {
+            font-family: helvetica;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1 {
+            color: #000;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .green {
+            background-color: #E2F5EA ;
+        }
+
+        .red {
+            background-color: #F8DDD9 ;
+        }
+
+        .gray {
+            background-color: #F6F7F7;
+        }
+
+        .blue {
+            background-color: #E9F8FC ! ;
+        }
+
+        .initials {
+            text-transform: uppercase;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #fff;
+            box-shadow: 0 0 7px #d4cada;
+            background: #E9F8FC;
+            border-radius: 50%;
+            color: #734b8c;
+            font-weight: 600;            
+            position: relative;
+            line-height: 35px;
+            float: left;
+            text-align: center;
+        }
+
+        .name {
+            padding: 7px 15px 7px 20px;
+            margin-left: -12px;
+            z-index: -99;
+            font-size: 14px;
+            margin-top: 3px;
+            float: left;
+            height: 15px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+        }
+        .name-after {
+            position: absolute;
+            right: -4px;
+            top: -5px;
+            width: 0;
+            height: 0;
+            border-bottom: 6px solid #e2f5ea;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            transform: rotate(135deg);
+        }
+        .container {
+            text-align: center;
+        }
+
+        .div-table {
+        width: 1100px;         
+       
+      }
+      .div-table-row {
+        width: auto;
+        clear: both;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: 5px; 
+        
+      }
+      .div-table-row.header {
+            height: 40px;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: 5px;
+      }
+      .div-table-col {
+        float: left; /* fix for  buggy browsers */
+        width: 100px;         
+        text-align: left;
+        page-break-inside: avoid;  
+      }
+      .div-table-col.fixed {
+        width: 100px;     
+        page-break-inside: avoid;   
+        min-height: 45px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .div-table-col.left {
+          text-align: left;
+          float: left;
+      }
+      .shift {
+        height: 50px;
+       
+    }
+   
+    .shift-container {
+        margin-left: 0px;      
+        float: left;       
+        page-break-inside: avoid;
+    }
+
+    .same-line {
+        float: left;
+    }
+    .new-line {
+        float: none;
+    }
+   
+   .w10 .name {
+    width: 39px;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+   }
+    .w1 .name {
+        width: 40px;
+    }
+    .w2 .name {
+        width: 130px;
+    }
+    .w3 .name {
+        width: 230px;
+    }
+    .w4 .name {
+        width: 330px;
+    }
+    .w5 .name {
+        width: 430px;
+    }
+    .w6 .name {
+        width: 530px;
+    }
+    .w7 .name {
+        width: 630px;
+    }
+    .w8 .name {
+        width: 730px;
+    }
+    .w9 .name {
+        width: 830px;
+    }
+    .w10 .name {
+        width: 930px;
+    }
+
+    .w1 {
+        width: 100px;
+    }
+    .w2 {
+        width: 200px;
+    }
+    .w3 {
+        width: 300px;
+    }
+    .w4 {
+        width: 400px;
+    }
+    .w5 {
+        width: 500px;
+    }
+    .w6 {
+        width: 600px;
+    }
+    .w7 {
+        width: 700px;
+    }
+    .w8 {
+        width: 800px;
+    }
+    .w9 {
+        width: 900px;
+    }
+    .w10 {
+        width: 1000px;
+    }
+
+    .h1 {/* h1 = hour 1, = 9am*/
+        margin-left: 0px;
+    }
+    .h2 {
+        margin-left: 100px;
+    }
+    .h3 {
+        margin-left: 200px;
+    }
+    .h4 {
+        margin-left: 300px;
+    }
+    .h5 {
+        margin-left: 400px;
+    }
+    .h6 {
+        margin-left: 500px;
+    }
+    .h7 {
+        margin-left: 600px;
+    }
+    .h8 {
+        margin-left: 700px;
+    }
+    .h9 {
+        margin-left: 800px;
+    }
+    .h10 {
+        margin-left: 900px;
+    }
+    .h11 {
+        margin-left: 1000px;
+    }
+    .logo img {
+        width: 170px;
+        margin-left: 35px;
+     }
+    </style>
+    </head>
+    <body>
+        <div class="logo"><a href="https://joinhomebase.com/schedule-maker/"><img src="[REPLACE_LOGO]" width="170px" /></a></div>
+       
+        <h1>Your Schedule</h1>
+       
+        <div class="div-table">
+            <div class="div-table-row header">
+               <div class="div-table-col fixed" style="padding-top: 0px;" align="left">Day</div>
+               <div  class="div-table-col">9am</div>
+               <div  class="div-table-col">10am</div>
+               <div  class="div-table-col">11am</div>
+               <div  class="div-table-col">12pm</div>
+               <div  class="div-table-col">1pm</div>
+               <div  class="div-table-col">2pm</div>
+               <div  class="div-table-col">3pm</div>
+               <div  class="div-table-col">4pm</div>
+               <div  class="div-table-col">5pm</div>               
+            </div>
+            [REPLACE_SCHEDULE]           
+      </div>         
+    
+    </body>
+</html>

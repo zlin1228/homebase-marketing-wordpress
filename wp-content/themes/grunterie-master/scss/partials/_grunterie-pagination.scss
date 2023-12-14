@@ -1,0 +1,53 @@
+.pagination {
+  background: $purple;
+  padding: 2rem 0;
+}
+
+.page-numbers {
+  color: #999;
+  @include pagination;
+  margin-bottom: 0;
+}
+
+.pagination-centered ul.page-numbers li {
+  float: none;
+  display: inline-block;
+}
+
+.page-numbers li {
+  margin-left: rem-calc(8);
+
+  span {
+    @include border-radius(2px);
+  }
+
+  a {
+    background: darken($purple, 10%);
+    color: white;
+    @include border-radius(2px);
+
+    &:hover {
+      background: darken($purple, 15%);
+    }
+  }
+}
+
+// customizing pagination for WordPress using Foundation mixins, this is not beautiful I know
+.page-numbers li {
+  span:hover a,
+  span a:focus {
+    background: darken($purple, 10%);
+  }
+  span.current {
+    background: white;
+    padding: $pagination-link-pad;
+    color: $purple;
+    font-weight: $pagination-link-current-font-weight;
+    cursor: pointer;
+
+    &:hover {
+      background: $blue;
+      color: white;
+    }
+  }
+}

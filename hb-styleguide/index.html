@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Overview | Homebase Styleguide</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.typekit.net/isr4wgv.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand medium" href="#">homebase</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="layout.html">Layout <span class="sr-only">(current)</span></a></li>
+            <li><a href="utilities.html">Utilities <span class="sr-only">(current)</span></a></li>
+            <li><a href="modules.html">Modules <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="main">
+        <div class="components">
+          <p><h3>Overview</h3></p>
+          <p>The styleguide is a reference of UI patterns used throughout the Homebase app.</p>
+          <p>It attempts to ensure that we're writing CSS in a manageable way, that we're providing a consistent experience to our users, and that our designer never has to design a popup again.</p>
+          <p>This is an alpha version and should serve as a conversation-starter for us to move towards a better front-end. Feedback is welcome and strongly encouraged.</p>
+          <h5 class="regular mts">Let's get our shift together!</
+            ></h5>
+
+          <h3 class="mtxl">CSS Guidelines</h3>
+          <h4>Formatting</h4>
+          <ul class="list-bulleted">
+            <li>Use soft tab (2 spaces) for indentation.</li>
+            <li><strong>Never use ID selectors</strong>.</li>
+            <li>When using multiple selectors in a rule, give each selector its own line.</li>
+            <li>Put a space before the opening brace { in rule declarations</li>
+            <li>In properties, put a space after, but not before, the : character.</li>
+            <li>Put closing braces } of rule declarations on a new line</li>
+            <li>Put blank lines between rule declarations</li>
+          </ul>
+          <h6 class="mts">Bad</h6>
+          <pre>
+.avatar{
+    border-radius:50%;
+    border:2px solid white; }
+.no, .nope, .not_good {
+    // ...
+}
+#lol-no {
+  // ...
+}</pre>
+          <h6 class="mts">Good</h6>
+          <pre>
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.one,
+.selector,
+.per-line {
+  // ...
+}</pre>
+          <h4 class="mtxl">Javascript Hooks</h4>
+          <p>Avoid binding to the same class in both JS and CSS.</p>
+          <p>We recommend prefixing all JS hooks with <code>.js-</code>:</p>
+          <pre>
+&lt;button class="btn btn-primary js-request-to-book"&gt;Request to Book&lt;/button&gt;</pre>
+
+          <h4 class="mtxl">OOCSS & BEM</h4>
+          <p>OOCSS & BEM are used throughout this styleguide and recommended for future use.</p>
+          <h5 class="regular mtm">OOCSS (Object Oriented CSS) in a nutshell:</h5>
+          <p><strong>Separate skin and structure.</strong> Instead of adding a gradient to a button, create a global <code>.gradient {...}</code> class that can be reused elsewhere.
+          <p><strong>Separate container and content.</strong> An object should look the same wherever you put it. So instead of styling a specific <code>h2</code> with <code>.myObject h2 {...}</code>, create a class that describes the <code>h2</code> in question, like <code>&lt;h2 class="category-title"&gt;</code>.</p> 
+          <p class="pts">More info from people smarter than me:</p>
+            <ul class="bulleted-list">
+              <li><a href="https://github.com/stubbornella/oocss/wiki" target="_blank">https://github.com/stubbornella/oocss/wiki</a></li>
+              <li><a href="https://css-tricks.com/bem-101/" target="_blank">https://css-tricks.com/bem-101/</a></li>
+              <li><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/</a></li>
+            </ul>
+          </p>
+          <h5 class="regular mtm">BEM (Block, Element, Modifier) in a nutshell:</h5>
+          <p>BEM is a naming convention for HTML & CSS classes. Here's an example of what BEM looks like:</p>
+          <pre>
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block (two underscores) */ 
+.btn__price {}
+
+/* Modifier that changes the style of the block (two dashes) */
+.btn--orange {} 
+.btn--big {}</pre>
+          <p>The markup would look like this:</p>
+          <pre>
+&lt;a class="btn btn--big btn--orange" href="http://css-tricks.com"&gt;
+  &lt;span class="btn__price"&gt;$9.99&lt;/span&gt;
+  &lt;span class="btn__text"&gt;Subscribe&lt;/span&gt;
+&lt;/a&gt;</pre>
+          
+          <h5 class="regular mtl"><i>"God, that HTML looks awful".</i></h5>
+          <p>At first, yes, BEM looks awful. However, using it means that:</p>
+          <ul class="list-bulleted pbxxl">
+            <li>Any developer can read markup and understand the relationships between HTML & CSS. For example, <strong>if we were using DRY CSS</strong> we might write <code>&lt;div class="box  profile  pro-user"&gt;</code>. How are the classes box and profile related to each other? Are they related at all? Can you use <code>.pro-user</code> anywhere else? Using the BEM naming convention changes all of that.</li>
+            <li>Everything is reusable. Components can be place anywhere and look exactly the same, as they have no dependency on pages or other DOM elements. <strong>This means that nested selectors are strongly discouraged - nesting increases coupling and makes code reuse impossible</strong>.</li>
+            <li>The amount of new CSS we have to write is <strong>dramatically</strong> reduced.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="javascripts/bootstrap.min.js"></script> -->
+  </body>
+</html>

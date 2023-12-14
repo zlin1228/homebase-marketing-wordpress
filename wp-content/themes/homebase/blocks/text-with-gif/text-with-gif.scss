@@ -1,0 +1,172 @@
+.section-text-with-gif {
+  margin: 180px 0 100px;
+
+  .container-narrow {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    position: relative;
+
+    .left {
+      flex: 1;
+      max-width: 416px;
+      color: #252525;
+
+      .headline {
+        margin-bottom: 1rem;
+      }
+
+      .text {
+        font-size: 15px;
+      }
+    }
+
+    .right {
+      flex: 1;
+      margin: -15% -24% -15% 0;
+    }
+
+    .image-before {
+      position: absolute;
+      left: -130px;
+      top: -200px;
+    }
+
+    .arrow-bottom {
+      position: absolute;
+      left: -100px;
+      bottom: -80px;
+    }
+  }  
+
+  &#payroll {
+    margin-top: 100px;
+  }
+
+  &#payday {
+    .container-narrow {
+      .image-before {
+        top: -220px;
+      }
+    }
+  }
+
+  &#uncertainty {
+    .container-narrow {
+      .image-before {
+        top: -230px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .section-text-with-gif {
+    .container-narrow {
+      .right {
+        margin: -11% -15% -11% 0;
+      }
+
+      .image-before {
+        transform: scale(0.7);
+        left: -100px; 
+        top: -160px;
+      }
+
+      .arrow-bottom {
+        transform: scale(0.7);
+        left: -70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-text-with-gif {
+    .container-narrow {
+      .right {
+        margin: -11% -7% -11% 0;
+      }
+
+      .image-before {
+        transform: scale(0.6);
+        left: -60px; 
+        top: -180px;
+      }
+
+      .arrow-bottom {
+        transform: scale(0.7);
+        left: -20px;
+        bottom: -120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .section-text-with-gif {
+    .container-narrow {
+      gap: 3rem;
+
+      .right {
+        margin: -8% -7% -8% 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-text-with-gif {
+    margin: 40px 0 100px;
+
+    .container-narrow {
+      flex-direction: column-reverse;
+      padding-bottom: 100px;
+
+      .left {
+        padding: 0 1.5rem;
+      }
+
+      .right {
+        margin: -70px -1rem -50px;
+        max-width: 416px;
+      }
+
+      .image-before {
+        left: unset;
+        right: -60px;
+        top: unset;
+        bottom: -150px;
+      }
+
+      .arrow-bottom {
+        left: 0;
+        bottom: -90px;
+      }
+    }
+
+    &#payday {
+      .container-narrow {
+        .image-before {
+          top: unset;
+        }
+      }
+    }
+
+    &#uncertainty {
+      margin: 100px 0;
+      
+      .container-narrow {
+        .image-before {
+          top: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+	.section-text-with-gif {
+  	
+  }
+}

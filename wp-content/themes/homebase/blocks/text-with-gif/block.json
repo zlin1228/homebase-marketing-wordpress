@@ -1,0 +1,31 @@
+{
+    "name": "acf/text-with-gif",
+    "title": "Text with gif",
+    "description": "A custom Text with gif block.",
+    "style": "file:/text-with-gif.css",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["Text with gif", "2 columns"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-with-gif.php"
+    }
+
+}

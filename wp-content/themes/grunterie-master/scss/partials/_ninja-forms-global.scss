@@ -1,0 +1,26 @@
+.nf-form-wrap {
+    .field-wrap input[type=button] {
+        color: white;
+        background-color: #9776d4;
+        font-family: "proxima-nova","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+        cursor: pointer;
+        border: 1px solid #9776d4 !important;
+        padding: 10px 30px;
+        font-size: 17px;
+        border-radius: 4px;
+        transition: 200ms ease all;
+    
+        &:hover {
+            color: #9776d4;
+            background-color: white;
+        }
+    }
+
+    .nf-form-fields-required {
+        display: none;
+    }
+
+    .email-wrap .nf-field-label {
+        display: none;
+    }
+}

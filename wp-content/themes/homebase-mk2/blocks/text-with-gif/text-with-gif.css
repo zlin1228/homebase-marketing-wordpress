@@ -1,0 +1,142 @@
+.section-text-with-gif {
+	margin: 180px 0 100px;
+}
+
+.section-text-with-gif .container-narrow {
+	display: flex;
+	align-items: center;
+	gap: 6rem;
+	position: relative;
+}
+
+.section-text-with-gif .container-narrow .left {
+	flex: 1;
+	max-width: 416px;
+	color: #252525;
+}
+
+.section-text-with-gif .container-narrow .left .headline {
+	margin-bottom: 1rem;
+}
+
+.section-text-with-gif .container-narrow .left .text {
+	font-size: 15px;
+}
+
+.section-text-with-gif .container-narrow .right {
+	flex: 1;
+	margin: -15% -24% -15% 0;
+}
+
+.section-text-with-gif .container-narrow .image-before {
+	position: absolute;
+	left: -130px;
+	top: -200px;
+}
+
+.section-text-with-gif .container-narrow .arrow-bottom {
+	position: absolute;
+	left: -100px;
+	bottom: -80px;
+}
+
+.section-text-with-gif#payroll {
+	margin-top: 100px;
+}
+
+.section-text-with-gif#payday .container-narrow .image-before {
+	top: -220px;
+}
+
+.section-text-with-gif#uncertainty .container-narrow .image-before {
+	top: -230px;
+}
+
+@media screen and (max-width: 1280px) {
+	.section-text-with-gif .container-narrow .right {
+		margin: -11% -15% -11% 0;
+	}
+
+	.section-text-with-gif .container-narrow .image-before {
+		transform: scale(0.7);
+		left: -100px;
+		top: -160px;
+	}
+
+	.section-text-with-gif .container-narrow .arrow-bottom {
+		transform: scale(0.7);
+		left: -70px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.section-text-with-gif .container-narrow .right {
+		margin: -11% -7% -11% 0;
+	}
+
+	.section-text-with-gif .container-narrow .image-before {
+		transform: scale(0.6);
+		left: -60px;
+		top: -180px;
+	}
+
+	.section-text-with-gif .container-narrow .arrow-bottom {
+		transform: scale(0.7);
+		left: -20px;
+		bottom: -120px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.section-text-with-gif .container-narrow {
+		gap: 3rem;
+	}
+
+	.section-text-with-gif .container-narrow .right {
+		margin: -8% -7% -8% 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-text-with-gif {
+		margin: 40px 0 100px;
+	}
+
+	.section-text-with-gif .container-narrow {
+		flex-direction: column-reverse;
+		padding-bottom: 100px;
+	}
+
+	.section-text-with-gif .container-narrow .left {
+		padding: 0 1.5rem;
+	}
+
+	.section-text-with-gif .container-narrow .right {
+		margin: -70px -1rem -50px;
+		max-width: 416px;
+	}
+
+	.section-text-with-gif .container-narrow .image-before {
+		left: unset;
+		right: -60px;
+		top: unset;
+		bottom: -150px;
+	}
+
+	.section-text-with-gif .container-narrow .arrow-bottom {
+		left: 0;
+		bottom: -90px;
+	}
+
+	.section-text-with-gif#payday .container-narrow .image-before {
+		top: unset;
+	}
+
+	.section-text-with-gif#uncertainty {
+		margin: 100px 0;
+	}
+
+	.section-text-with-gif#uncertainty .container-narrow .image-before {
+		top: unset;
+	}
+}

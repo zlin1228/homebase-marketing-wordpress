@@ -1,0 +1,25 @@
+.main {
+  @include make-row();
+}
+
+.components {
+  @include make-md-column(8);
+  @include make-md-column-offset(2);
+}
+
+.component {
+  @include make-row();
+}
+
+.sidebar {
+  @include make-md-column(8);
+  @include make-md-column-offset(2);
+}
+
+.color-list {
+  @include make-row();
+}
+
+.color {
+  @include make-md-column(2);
+}

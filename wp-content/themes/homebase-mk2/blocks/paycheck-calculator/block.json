@@ -1,0 +1,32 @@
+{
+    "name": "acf/paycheck-calculator",
+    "title": "Paycheck calculator",
+    "description": "A custom Paycheck calculator block.",
+    "style": "file:/paycheck-calculator.css",
+    "script": "block-paycheck-calculator",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["paycheck", "calculator"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "paycheck-calculator.php"
+    }
+
+}

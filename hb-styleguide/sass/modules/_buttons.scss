@@ -1,0 +1,67 @@
+button, .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: $medium;
+  background: $white;
+  border: 1px solid $gray-medium;
+}
+
+.btn-link {
+  border: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-lg, .btn-group-lg > .btn { 
+  font-size: 18px;
+}
+
+.btn-default {
+  border: 1px solid $gray-dark;
+  color: $gray-dark;
+  background: $white;
+
+  &:hover, &:active, &:active:hover {
+    border: 1px solid $gray-dark;
+    color: $gray-dark;
+    background: $gray-light;
+  }
+} 
+
+.btn-primary {
+  border: 1px solid $blue;
+  color: $blue;
+  background: $white;
+
+  &:hover, &:active, &:focus, &:active:hover {
+    border: 1px solid $blue;
+    background: $blue;
+    color: $white;
+  }
+}
+
+.btn-success {
+  border: 1px solid $green;
+  color: $green;
+  background: $white;
+
+  &:hover, &:active, &:focus, &:active:hover {
+    border: 1px solid $green;
+    background: $green;
+    color: $white;
+  }
+}
+
+.btn-default-action {
+  @include button-variant($white, $gray-dark, $gray-dark);
+}
+
+.btn-primary-action {
+  @include button-variant($white, $blue, $blue);
+}
+
+.btn-success-action {
+  @include button-variant($white, $green, $green);
+}

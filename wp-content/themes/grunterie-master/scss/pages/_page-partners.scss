@@ -1,0 +1,346 @@
+// PAGE PARTNERS (New Design)
+.page-become-a-partner {
+    .hero-fullwidth-section {
+        
+        .hero-content {
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 60px 15px;
+            color: #fff;
+
+            .hero-logo {
+                margin-bottom: 15px;
+
+                img {
+                    width: 240px;
+                }
+            }
+
+            p {
+                letter-spacing: 3px;
+                font-weight: 300;
+            }
+
+            h3 {
+                color: #fff;
+                font-size: 36px;
+                margin-top: 28px;
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+
+    .partners-4col-section {
+            padding-top: 60px;
+
+            .col-3-cols {
+                margin-top: 47px;
+
+                .col-3-col {
+                    background: #FFFFFF;
+                    padding: 20px 25px 26px;
+                    border-radius: 6px;
+                    min-height: 434px;
+                    transition: all 0.2s ease-in-out;
+
+                    @media (max-width: 1024px) {
+                        min-height: 310px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.11);
+                        transition: all 0.2s ease-in-out;
+
+                        .col-3-col-link {
+                            opacity: 1;
+                            transition: all 0.2s ease-in-out;
+
+                            a {
+                                
+                                // &::after {
+                                //     content: '';
+                                //     right: -36px;
+                                //     transition: all 0.2s ease-in-out;
+                                // }
+                            }
+                        }
+                    }
+
+                    .col-3-col-img {
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .col-3-col-content {
+                        height: auto;
+
+                        h4 {
+                            color: #8A5EA6;
+                            line-height: 20px;
+                            padding: 0px 16px;
+                            min-height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        p {
+                            color: #313A43;
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    .col-3-col-link {
+                        padding-right: 35px;
+                        opacity: 1;
+                        transition: all 0.2s ease-in-out;
+
+                        a {
+                            color: #8857ac;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            text-transform: capitalize;
+                            letter-spacing: 0px;
+                            position: relative;
+
+                            &:hover {
+                                color: #8857ac;
+
+                                &::after {
+                                    content: '';
+                                    right: -36px;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                background-image:url('../img/lnk-arrow-left.png'); 
+                                background-repeat: no-repeat;
+                                background-size: 90%;
+                                position: absolute;
+                                z-index: 100000;
+                                right: -30px;
+                                top: 7px;
+                                display: inline-block;
+                                width: 18px;
+                                height: 6px;
+                                transition: all 0.2s ease-in-out;          
+                            }
+                        }
+                    }
+                }
+            }
+        
+    }
+
+
+    .title-maximize {
+        margin-top: 70px;
+        font-size: 24px;
+
+        @media (max-width: 640px) {
+            margin-top: 20px;
+        }
+    }
+
+
+    .reviews-module-hero {
+        .large-6 {
+            width: 100% !important;
+            height: auto !important;
+            margin-top: 25px;
+
+            .reviews-section {
+                .row {
+                    &:nth-child(1) {
+                        padding-top: 60px;
+                        padding-bottom: 55px;
+                        border-top: 1px solid #E5E6E7;
+
+                        .large-10 {
+                            margin-left: 0px !important;
+                            width: 100% !important;
+
+                            h2 {
+                                font-size: 24px;
+                                line-height: 40px;
+                                margin-top: 12px;
+                                margin-bottom: 5px;
+                                color: #452F53;
+
+                                .icon-heart {
+                                    width: 23px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    background: url('../img/icon-heart-title.png') center center no-repeat;
+                                    background-size: contain;
+                                }
+                            }
+                        }
+                    }
+        
+                    &:nth-child(2) {
+                        padding: 0px 70px 60px 70px;
+                        
+                        .getintouch-img-table {
+                            padding-top: 6px;
+        
+                            .getintouch-img-col {
+                                img {
+                                    margin: 0 auto;
+                                    display: block;
+                                }
+                            }
+                        }
+        
+                        .testimonial-box {
+                            min-height: 210px;
+                            background-color: #F6F7F7;
+                            border-radius: 6px;
+                            padding: 29px 40px;
+                            text-align: left;
+                            position: relative;
+        
+                            .description {
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: #485058;
+                                margin-bottom: 20px;
+                            }
+        
+                            .client {
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #626970;
+                            }
+        
+                            &:after {
+                                content: '';
+                                border-right: solid 30px #f6f7f7;
+                                border-bottom: solid 16px transparent;
+                                border-top: solid 16px transparent;
+                                position: absolute;
+                                left: -24px;
+                                top: calc(50% - 16px);
+                            }
+                        }
+                    }
+        
+                    &:nth-child(3) {
+                        padding: 20px 70px 86px 70px;
+                        border-bottom: 1px solid #E5E6E7;
+        
+                        .columns {
+                            text-align: center;
+        
+                            .score {
+                                margin-bottom: 10px;
+                            }
+        
+                            .company {
+                                margin-bottom: 10px;
+                            }
+
+                            .score-description {
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+
+    @media only screen and (max-width: 640px) {
+
+        .reviews-module-hero {
+            .large-6 {
+                margin-top: 0px;
+
+                .hero-text {
+                    background-color: #ffffff;
+                    padding-top: 0px !important;
+                }
+
+                .reviews-section {
+
+                    .row:nth-child(1) {
+                        padding-top: 35px;
+                        padding-bottom: 30px;
+
+                        .large-10 {
+                            h2 {
+                                font-size: 27px;
+                                line-height: 33px;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+
+                    .row:nth-child(2) {
+                        padding: 0px 0px 40px 0px !important;
+
+                        .testimonial-box {
+                            text-align: center;
+                            margin-top: 35px;
+
+                            &:after {
+                                content: '';
+                                border-right: solid 30px #f6f7f7;
+                                border-bottom: solid 16px transparent;
+                                border-top: solid 16px transparent;
+                                position: absolute;
+                                left: calc(50% - 14px) !important;
+                                top: -18px !important;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+
+                    .row:nth-child(3) {
+                        padding: 0px 0px 0px 0px !important;
+
+                        .columns {
+                            .score-description {
+                                color: #000;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+
+.page-id-8986 {
+    .hero-top{
+        background-image: url(../img/about-us-bg-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        
+        
+        h1{
+            color: #fff;
+            font-size: 36px;
+        }
+    }
+}

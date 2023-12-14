@@ -1,0 +1,44 @@
+.weekpicker__btn, 
+.weekpicker__label {
+  display: inline-block;
+  float: left;
+}
+
+.weekpicker__btn {
+  padding: 6.5px 15px;
+  border-color: $gray-medium;
+  background: $gray-light; 
+}
+
+.weekpicker__btn:hover {
+  border-color: $gray-medium;
+  background: darken($gray-light, 2%);
+}
+
+.weekpicker__btn--left {
+  @include border-right-radius(0);
+}
+
+.weekpicker__btn--right {
+  margin-left: -1px;
+  @include border-left-radius(0);
+}
+
+.weekpicker__label {
+  margin-left: -1px;
+  border: 1px solid $gray-medium;
+  line-height: 35px;
+}
+
+.weekpicker__label--multiline {
+  line-height: 1;
+}
+
+.weekpicker__title, 
+.weekpicker__description {
+  color: $gray-dark;
+}
+
+.weekpicker__description {
+  font-size: 0.8em;
+}

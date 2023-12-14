@@ -1,0 +1,32 @@
+{
+    "name": "acf/faq",
+    "title": "FAQ",
+    "description": "A custom FAQ block.",
+    "style": "file:/faq.css",
+    "script": "block-faq",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["faq"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "faq.php"
+    }
+
+}

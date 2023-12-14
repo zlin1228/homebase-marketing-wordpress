@@ -1,0 +1,35 @@
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 100%;
+  color: $gray-dark;
+
+  &:hover {
+    background: darken($gray-light, 5%);
+  }
+}
+
+.modal-body, .modal-header, .modal-footer {
+  text-align: center;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-body {
+  padding: 5px 40px 30px;
+}
+
+.modal-footer {
+  padding: 0 40px 40px;
+}
+
+.modal__icon {
+  @include font-size(45px);
+  color: lighten($gray-dark, 10%);
+}

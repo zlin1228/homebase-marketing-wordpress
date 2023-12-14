@@ -1,0 +1,456 @@
+.page-id-8401 {
+
+    .col-2-section:nth-child(1){
+        margin-top: 0 !important;
+        
+        .row {
+            align-items: flex-start !important;
+
+            .columns {
+
+                &.large-5 {
+                    width: 50% !important;
+                    padding-top: 35px !important;
+
+                    .hero-accountants {
+                        h2 {
+                            color: #452F53 !important;
+                            font-weight: normal !important;
+                            font-size: 39px !important;
+                            line-height: 45px !important;
+                        }
+                    
+                        p {
+                            font-weight: 300 !important;
+                            font-size: 18px !important;
+                            line-height: 27px !important;
+                            color: #452F53 !important;
+                        }
+
+                    
+                        pre {
+                            font-size: 18px;
+                            line-height: 48px;
+                            color: #8A5EA6;
+                            font-family: "proxima-nova","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+                        }
+                    }
+
+                    #ninja_forms_form_28_response_msg {
+                        margin-bottom: 8px !important;
+
+                        div {
+                            h3 {
+                                border: 1px solid #2e9c3b;
+                                padding: 13px 15px;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: #2e9c3b;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    #ninja_forms_form_28 {
+                        .ninja-forms-all-fields-wrap {
+
+                            .ninja-forms-required-items {
+                                display: none;
+                            }
+
+                            .field-wrap {
+                                margin-bottom: 0px;
+
+                                input {
+                                    border-radius: 4px;
+                                    height: 45px;
+                                }
+
+                                input[type="submit"] {
+                                    padding: 0 25px;
+                                    max-width: 100%;
+                                    width: 100%;
+                                    display: inline-block;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    background-color: #8857ac;
+                                    color: #fff;
+                                    border: 1px solid #8857ac !important;
+                                    border-radius: 4px;
+                                    transition: all 300ms ease-out;
+
+                                    &:hover {
+                                        background-color: #fff;
+                                        color: #8857ac;
+                                    }
+                                }
+
+                                label {
+                                    display: none;
+                                }
+
+                                .ninja-forms-field-error {
+                                    p {
+                                        color: red !important;
+                                        font-size: 14px !important;
+                                        margin-top: -15px;
+                                        margin-bottom: 5px !important;
+                                    }
+                                }
+                            }
+
+                            .field-wrap:nth-child(2) {
+                                width: 49%;
+                                float: left;
+                                margin-bottom: 0px !important;
+                            }
+
+                            .field-wrap:nth-child(3) {
+                                width: 49%;
+                                float: right;
+                                margin-bottom: 0px !important;
+                            }
+                        }
+                    }
+                    
+                    
+                    #nf_submit_74 input{
+                        padding: 0 25px;
+                        max-width: 100%;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 46px;
+                        margin-bottom: 25px;
+                        background-color: #8857ac;
+                        color: #fff;
+                        border: 1px solid #8857ac;
+                        border-radius: 4px;
+                        transition: all 300ms ease-out;
+                        margin: 20px 0 0; 
+                    }
+                }
+
+                &.large-7 {
+                    width: 50% !important;
+                    padding-top: 55px !important;
+                    padding-right: 0px !important;
+                }
+            }
+
+            
+        }
+    }
+
+
+    .step-section {
+        .step-columns {
+            .large-3 {
+                width: 20% !important;
+
+                .step-container {
+                    h4 {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .col-3-section {
+        .col-3-cols {
+            .col-3-col-content {
+                h4 {
+                    color: #8857ac;
+                }
+            }
+        }
+    }
+
+    .starting-lnk {
+        color: #452F53;
+        font-size: 24px;
+        font-weight: 100;
+        border-bottom: 1px solid #452F53;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            background: url('../img/lnk-right-arrow.svg') center center no-repeat;
+            position: absolute;
+            width: 21px;
+            height: 8px;
+            display: block;
+            right: -35px;
+            top: 10px;
+            transition: all 200ms ease-out;
+        }
+
+        &:hover {
+            &:after {
+                content: '';
+                right: -40px;
+                transition: all 200ms ease-out;
+            }
+        }
+    }
+
+    
+
+    .reviews-module-hero {
+        
+            .large-6 {
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 25px;
+
+                .reviews-section {
+                    .row {
+                        &:nth-child(1) {
+                            padding-top: 60px;
+                            padding-bottom: 55px;
+                            border-top: 1px solid #E5E6E7;
+
+                            .large-10 {
+                                margin-left: 0px !important;
+                                width: 100% !important;
+
+                                h2 {
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                    color: #452F53;
+
+                                    .icon-heart {
+                                        width: 23px;
+                                        height: 20px;
+                                        display: inline-block;
+                                        background: url('../img/icon-heart-title.png') center center no-repeat;
+                                        background-size: contain;
+                                    }
+                                }
+                            }
+                        }
+            
+                        &:nth-child(2) {
+                            padding: 0px 70px 60px 70px;
+                            
+                            .getintouch-img-table {
+                                padding-top: 6px;
+            
+                                .getintouch-img-col {
+                                    img {
+                                        margin: 0 auto;
+                                        display: block;
+                                    }
+                                }
+                            }
+            
+                            .testimonial-box {
+                                min-height: 210px;
+                                background-color: #F6F7F7;
+                                border-radius: 6px;
+                                padding: 29px 40px;
+                                text-align: left;
+                                position: relative;
+            
+                                .description {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #485058;
+                                    margin-bottom: 20px;
+                                }
+            
+                                .client {
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #626970;
+                                }
+            
+                                &:after {
+                                    content: '';
+                                    border-right: solid 30px #f6f7f7;
+                                    border-bottom: solid 16px transparent;
+                                    border-top: solid 16px transparent;
+                                    position: absolute;
+                                    left: -24px;
+                                    top: calc(50% - 16px);
+                                }
+                            }
+                        }
+            
+                        &:nth-child(3) {
+                            padding: 0px 70px 90px 70px;
+                            border-bottom: 1px solid #E5E6E7;
+            
+                            .columns {
+                                text-align: center;
+            
+                                .score {
+                                    margin-bottom: 10px;
+                                }
+            
+                                .company {
+                                    margin-bottom: 10px;
+                                }
+
+                                .score-description {
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+    }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .page-id-8401 {
+        .col-2-section:nth-child(1) {
+            .row {
+                .columns {
+
+                    &.large-7 {
+                        display: none !important;
+                    }
+                    
+                    &.large-5 {
+                        width: 100% !important;
+
+                        .hero-accountants {
+                            h2 {
+                                font-size: 30px !important;
+                                line-height: 36px !important;
+                            }
+                        
+                            p {
+                                text-align: center;
+                                font-size: 16px !important;
+                                line-height: 22px !important;
+                            }
+    
+                        
+                            pre {
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .reviews-module-hero {
+            .large-6 {
+                margin-top: 0px;
+
+                .hero-text {
+                    background-color: #ffffff;
+                    padding-top: 0px !important;
+                }
+
+                .reviews-section {
+
+                    .row:nth-child(1) {
+                        padding-top: 35px;
+                        padding-bottom: 30px;
+
+                        .large-10 {
+                            h2 {
+                                font-size: 27px;
+                                line-height: 33px;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+
+                    .row:nth-child(2) {
+                        padding: 0px 0px 40px 0px;
+
+                        .testimonial-box {
+                            text-align: center;
+                            margin-top: 35px;
+
+                            &:after {
+                                content: '';
+                                border-right: solid 30px #f6f7f7;
+                                border-bottom: solid 16px transparent;
+                                border-top: solid 16px transparent;
+                                position: absolute;
+                                left: calc(50% - 14px);
+                                top: -18px;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+
+                    .row:nth-child(3) {
+                        padding: 0px 0px 20px 0px;
+
+                        .columns {
+                            .score-description {
+                                color: #000;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .step-section {
+            padding: 20px 0 20px;
+
+            .step-columns {
+                display: flex;
+                justify-content: center;
+
+                .large-3 {
+                    width: 50% !important;
+                }
+            }
+        }
+
+        .pos-section {
+            margin-bottom: 10px;
+        }
+
+        .starting-lnk {
+            font-size: 20px;
+            margin-top: 23px;
+        }
+
+    }
+
+}
+
+.ninja-forms-cont{
+    .submit-wrap input{
+        padding: 0 25px;
+        max-width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 46px;
+        margin-bottom: 25px;
+        background-color: #8857ac;
+        color: #fff;
+        border: 1px solid #8857ac;
+        border-radius: 4px;
+        transition: all 300ms ease-out;
+        margin: 20px 0 0; 
+    } 
+}

@@ -1,0 +1,31 @@
+{
+    "name": "acf/cta-calculator",
+    "title": "CTA - calculator",
+    "description": "A custom CTA calculator block.",
+    "style": "file:/cta-calculator.css",
+    "script": "block-cta-calculator",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["cta", "calculator"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "cta-calculator.php"
+    }
+}

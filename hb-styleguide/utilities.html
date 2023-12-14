@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Utilities | Homebase Styleguide</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.typekit.net/isr4wgv.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand medium" href="#">homebase</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="layout.html">Layout <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="utilities.html">Utilities <span class="sr-only">(current)</span></a></li>
+            <li><a href="modules.html">Modules <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="main">
+        <div class="components">
+          <h1 class="mbl">Utilities</h1>
+          <p>Utilities reduce repetition and ensure consistency for properties that are frequently used, such as floats, vertical alignment, and typography styles.</p>
+
+          <ul class="list-inline">
+            <li><a href="#positioning">Positioning</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#color-utilities">Color Utilities</a></li>
+            <li><a href="#typography">Typography</a></li>
+          </ul>
+
+          <section id="positioning" class="component-details ptxl">
+            <p><h3>Positioning</h3></p>
+            <p>Here's a list of available classes:</p>
+            <ul>
+              <li>.float-r</li>
+              <li>.float-l</li>
+              <li>.inline</li>
+              <li>.block</li>
+              <li>.inline-block</li>
+              <li>.border-box</li>
+              <li>.valign-t</li>
+              <li>.valign-b</li>
+              <li>.valign-m</li>
+            </ul>
+          </section>
+
+          <section id="lists" class="component-details ptxl">
+            <p><h3>Lists</h3></p>
+            <h5 class="mbxs">List Bulleted</h5>
+            <pre>
+&lt;ul class="list-bulleted"&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+            <ul class="list-bulleted">
+              <li>Item One</li>
+              <li>Item Two</li>
+              <li>Item Three</li>
+            </ul>
+
+            <h5 class="mtl mbxs">List Inline</h5>
+            <pre>
+&lt;ul class="list-inline"&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+            <ul class="list-inline">
+              <li>Item One</li>
+              <li>Item Two</li>
+              <li>Item Three</li>
+            </ul>
+          </section>
+
+          <section id="borders" class="component-details ptxl">
+            <p><h3>Borders</h3></p>
+            <pre>
+&lt;div class="border rounded-tr pam"&gt;
+&lt;/div&gt;</pre>
+
+            <div class="border rounded-tr pam">
+              Border rounded top-right
+            </div>
+
+            <h5 class="pvm">Available border classes:</h5>
+            <ul>
+              <li>.border</li>
+              <li>.border-t</li>
+              <li>.border-r</li>
+              <li>.border-b</li>
+              <li>.border-l</li>
+              <li>.rounded</li>
+              <li>.rounded-t</li>
+              <li>.rounded-r</li>
+              <li>.rounded-b</li>
+              <li>.rounded-l</li>
+              <li>.rounded-tr</li>
+              <li>.rounded-br</li>
+            </ul>
+          </section>
+
+          <section id="color-utilities" class="component-details ptxl">
+            <p><h3>Color Utilities</h3></p>
+            <pre>
+&lt;div class="pam bg--purple text--white"&gt;
+&lt;/div&gt;</pre>
+
+            <div class="pam bg--purple text--white">
+              padding-all-medium bg--purple text--white
+            </div>
+
+            <h5 class="pvm">Available background classes:</h5>
+            <ul>
+              <li>.bg--purple</li>
+              <li>.bg--pink</li>
+              <li>.bg--violet</li>
+              <li>.bg--blue</li>
+              <li>.bg--navy-light</li>
+              <li>.bg--navy</li>
+              <li>.bg--gray-light</li>
+              <li>.bg--gray-dark</li>
+              <li>.bg--green</li>
+              <li>.bg--orange</li>
+              <li>.bg--red</li>
+              <li>.bg--white</li>
+            </ul>
+
+            <h5 class="pvm">Available text color classes:</h5>
+            <ul>
+              <li>.text--purple</li>
+              <li>.text--pink</li>
+              <li>.text--violet</li>
+              <li>.text--blue</li>
+              <li>.text--navy-light</li>
+              <li>.text--navy</li>
+              <li>.text--gray-light</li>
+              <li>.text--gray-dark</li>
+              <li>.text--green</li>
+              <li>.text--orange</li>
+              <li>.text--red</li>
+              <li>.text--white</li>
+            </ul>
+          </section>
+
+          <section id="typography" class="component-details ptxl">
+            <p><h3>Typography</h3></p>
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6 class="mbs">H6 Heading</h6>
+            <pre>
+&lt;p class="regular"&gt;&lt;/p&gt;
+&lt;p class="medium"&gt;&lt;/p&gt;
+&lt;p class="bold"&gt;&lt;/p&gt;
+&lt;p class="italic"&gt;&lt;/p&gt;
+&lt;p class="text-left"&gt;&lt;/p&gt;
+&lt;p class="text-center"&gt;&lt;/p&gt;
+&lt;p class="text-right"&gt;&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;&lt;/p&gt;
+&lt;p class="text-lowercase"&gt;&lt;/p&gt;
+&lt;p class="text-capitalize"&gt;&lt;/p&gt;
+</pre>
+
+            <p class="regular">Paragraph Regular Weight</p>
+            <p class="medium">Paragraph Medium Weight</p>
+            <p class="bold">Paragraph Bold Weight</p>
+            <p class="italic">Paragraph Italics</p>
+            <p class="text-left">Text Left</p>
+            <p class="text-center">Text Center</p>
+            <p class="text-right">Text Right</p>
+            <p class="text-uppercase">Text Uppercase</p>
+            <p class="text-lowercase">Text Lowercase</p>
+            <p class="text-capitalize">Text Capitalize</p>
+            <p class="block-title">This is a block title</p>
+
+            <h5 class="pvm">Block Titles <span class="label label-danger">Important</span></h5>
+            <p>We use block-titles a LOT in our UI: Now we only have to add one class.</p>
+<pre>
+&lt;p class="block-title"&gt;&lt;/p&gt;
+&lt;p class="desc"&gt;&lt;/p&gt;
+</pre>
+
+            <p class="block-title">This is a block title</p>
+            <p class="desc">This is a description</p>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="javascripts/bootstrap.min.js"></script> -->
+  </body>
+</html>

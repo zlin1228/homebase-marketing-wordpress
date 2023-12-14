@@ -1,0 +1,99 @@
+.border {
+  border: 1px solid $border-color;
+}
+
+.border-t {
+  border-top: 1px solid $border-color;
+}
+
+.border-r {
+  border-right: 1px solid $border-color;
+}
+
+.border-b {
+  border-bottom: 1px solid $border-color;
+}
+
+.border-l {
+  border-left: 1px solid $border-color;
+}
+
+.rounded {
+  @include border-radius(3px);
+}
+
+.rounded-t {
+  @include border-top-radius(3px);
+}
+
+.rounded-r {
+  @include border-right-radius(3px);
+}
+
+.rounded-b {
+  @include border-bottom-radius(3px);
+}
+
+.rounded-l {
+  @include border-left-radius(3px);
+}
+
+.rounded-tr {
+  @include border-top-right-radius(3px);
+}
+
+.rounded-br {
+  @include border-bottom-right-radius(3px);
+}
+
+.rounded-tl {
+  @include border-top-left-radius(3px);
+}
+
+.rounded-bl {
+  @include border-bottom-left-radius(3px);
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.inline { 
+  display: inline; 
+}
+
+.block { 
+  display: block; 
+}
+
+.inline-block { 
+  display: inline-block; 
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.valign-t {
+  vertical-align: top;
+}
+
+.valign-b {
+  vertical-align: bottom;
+}
+
+.valign-m {
+  vertical-align: middle;
+}
+
+.hide { 
+  display: none; 
+}
+
+.overflow-h {
+  overflow: hidden;
+}

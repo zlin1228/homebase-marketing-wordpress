@@ -1,0 +1,449 @@
+
+/** PAGE Free Time Card Calculator **/
+.page-template-page-free-time-card-calculator {
+    .title{
+        font-size: 32px;
+        color: #000;
+        margin: 50px 0;
+        line-height: 1.3;
+
+        @media screen and (max-width: 778px) {   
+            font-size: 26px;
+        }
+    }
+      
+    table{
+        width: 100%; 
+ 
+        thead{  
+            background: transparent;
+ 
+            th{  
+                font-size: 16px; 
+
+                &:last-of-type{
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 990px) {            
+                    display: none;
+                    width: 100%;    
+                }
+            }  
+        } 
+ 
+        tbody{ 
+            position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background: #E5E6E7;
+                    left: 0;
+                }
+
+            tr{
+                background: transparent;
+                position: relative;
+
+                @media (min-width: 990px) {            
+                     &::after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 100%; 
+                        height: 1px;
+                        background: #E5E6E7;
+                        left: 0;
+                    }
+                }
+                td{
+                    font-size: 16px;
+                    color: #000; 
+
+                    @media screen and (max-width: 990px) {            
+                        display: block;
+                        width: 100%; 
+                        padding: 0;              
+                    }
+
+                    input{
+                        background: #F6F7F7 ;
+                        width: 36px;
+                        height: 36px; 
+                        margin: 10px;
+                        padding: 0;
+                        text-align: center;
+                        display: inline-block;
+                        -webkit-appearance: textfield; 
+                        border: 0;
+
+                        &:focus{
+                            border: 0;
+                            background: #E5E6E7 ;
+                        }
+                    }
+
+                    .indicator{
+                        display: inline-block;
+
+                        a{
+                            font-size: 14px;
+                            color: #969BA0 ;
+                            background: #E5E6E7 ;
+                            padding: 5px 10px;
+                            border-radius: 3px;
+                            margin: 0 -4px;
+                            transition: background 0.5s;
+                            position: relative;
+                            text-decoration: none;
+
+                            &.active{
+                                background: #F6F7F7 ;
+                                color: #000 ;
+                                padding: 10px;
+                                transition: background 0.5s;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                    
+                    .total{
+                        min-width: 120px;
+                        text-align: right;
+                    }
+
+                    @media screen and (max-width: 990px) { 
+                        &.day{
+                            font-size: 22px;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+
+                        &.starting{
+                            position: relative;
+
+                            &:before{
+                                content: "Starting Time";
+                                min-width: 110px;
+                                display: inline-block;
+                            }
+                        }
+                        &.ending{
+                            position: relative;
+
+                            &:before{
+                                content: "Ending Time";
+                                min-width: 110px;
+                                display: inline-block;
+                            }
+                        }
+                        &.break{
+                            position: relative;
+
+                            &:before{
+                                content: "Break Duration";
+                                min-width: 110px;
+                                display: inline-block;
+                            }
+                        }
+
+                        .total{
+                            position: relative;
+                            text-align: left;
+                            font-size: 18px;
+                            font-weight: 600;
+                            margin-bottom: 50px;
+                            margin-top: 15px;
+
+                            &:before{
+                                content: "Total Hours";
+                                min-width: 110px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .calculate-end{
+        @media screen and (max-width: 990px) { 
+            display: flex;
+            flex-wrap: wrap-reverse;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 990px) {            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;                 
+        }
+
+        .signup-bumper-section{
+            margin: 0;
+            margin-top: -15px;
+
+            .ninja-forms-required-items, .ninja-forms-req-symbol{
+                display: none;
+            }
+
+            .field-wrap, #ninja_forms_required_items{
+                margin: 0;
+            }
+
+            .ninja-forms-response-msg {
+                margin-bottom: 20px;
+            }
+
+            .ninja-forms-field-error {
+                display: none !important;
+            }
+
+            form{
+                margin: 0;
+            }
+
+            .text-wrap.label-above label{ 
+                margin: 0;
+            }
+
+            .ninja-forms-field{
+                margin: 0;
+                padding: 12px;
+                height: 45px;
+            }         
+
+            .ninja-forms-all-fields-wrap{ 
+                display: flex;
+                align-items: start;
+            }
+ 
+            .nf-after-form-content {
+                display: none;
+            }
+            input[type="button"]{
+                display: inline-block;
+                max-width: 200px;
+                text-align: center;
+                border: none;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                background-color: #8857ac;
+                text-transform: none;
+                color: #fff;
+                margin-top: 0px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 48px;
+                font-family: "proxima-nova","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+                border: 1px solid #8857ac !important;
+                margin-left: -1px;
+                padding: 0 10px;
+                line-height: 44px;
+            
+                &:hover{
+                    border: 1px solid #a273c4 !important;
+                    cursor: pointer; 
+                }
+            } 
+
+            p{
+                margin: 0 !important;
+            }
+
+            nf-fields-wrap {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .nf-form-cont {
+                margin-top: 43px;
+            }
+        }
+
+        .print-btn{
+            font-size: 16px;
+            font-weight: 600;
+            color: #04A2BD ;
+            background-color: #E9F8FC ;
+            border: 1px solid #E9F8FC;
+            background-image: url(../img/print.png) ;
+            background-size: 16px ;
+            background-repeat: no-repeat ;
+            background-position: left 25px center ;
+            padding: 10px 30px 10px 60px;
+            border-radius: 2px;
+            text-decoration: none;
+
+            @media screen and (max-width: 990px) {            
+                margin: 20px 0;
+                display: block;
+                text-align: center;
+                width: 100%;   
+                max-width: 140px;     
+            }
+        }
+
+        .clear-btn{
+            font-size: 16px;
+            font-weight: 600;
+            color: #969BA0 ;
+            border: 1px solid #969BA0;
+            background-image: url(../img/clear.png) ;
+            background-size: 16px ;
+            background-repeat: no-repeat ;
+            background-position: left 20px center ; 
+            padding: 10px 30px 10px 50px;
+            border-radius: 2px;
+            text-decoration: none;
+
+            @media screen and (max-width: 990px) {         
+                margin: 20px 0;   
+                display: block;
+                text-align: center;             
+            }
+        }
+
+        .result-hours{
+            & *{
+                color: #313A43;
+                display: inline-block;
+                margin: 0  5px !important;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            &.error{
+                & *{
+                    color: #DE5541;
+                } 
+            }
+
+            @media screen and (max-width: 990px) {      
+                margin: 20px 0;
+                display: inline-flex;
+                align-items: center;           
+            }
+        }
+    }
+
+    .error{
+        color: #DE5541;
+
+        input{
+            background: #FCEEEC;
+            color: #DE5541;
+        }
+
+        .indicator{
+            a.active{
+                background: #FCEEEC;
+                color: #DE5541;
+            }
+        }
+    } 
+
+    .calculator-learn-more{
+        background: #F6F7F7;
+        padding: 50px 0;
+        margin-top: 100px;
+
+        @media screen and (max-width: 1024px) {    
+            text-align: center;
+        }
+
+        .lnk{
+            position: relative; 
+            color: #8A5EA6;
+            font-weight: 600;
+            border-bottom: 1px solid #8A5EA6;
+
+            @media screen and (max-width: 1024px) {    
+                margin-bottom: 50px;
+                display: inline-block;
+            }
+
+            &::before, &::after{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                background: #8A5EA6;
+                right: -20px;
+                top: 6px;
+                transform: rotate(45deg);
+            }
+
+            &::after{
+                transform: rotate(-45deg);
+                top: 12px;
+            }
+        }
+    }
+
+    @media print{
+        footer, .calculator-learn-more, a[href]:after{
+            display: none;
+        }
+
+        .header-placement {
+            height: 0;
+        } 
+        header{
+            position: relative !important;
+
+            .header-inner .top-bar {
+                border-bottom: 0;
+            }
+
+            .menu-icon, .top-bar-section{
+                display: none;
+            }
+
+            .logo{
+                display: block !important;
+                text-align: center;
+            }
+        }
+
+        .time-card-calculator{
+            margin-bottom: 100px;
+
+            .columns{
+                position: relative;
+            }
+
+            table tbody tr td, table thead tr th{
+                padding: 0;
+                text-align: center;
+
+                .total{
+                    text-align: center;
+                }
+
+                &.day{
+                    text-align: left;
+                    margin-left: 20px;
+                }
+
+                input{
+                    margin: 5px 0;
+                }
+            }
+
+            .calculate-end{
+                .signup-bumper-section, .print-btn, .clear-btn{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}

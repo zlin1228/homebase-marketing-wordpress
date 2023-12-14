@@ -1,0 +1,103 @@
+.admin-bar .section-navbar {
+  margin-top: 2rem;
+}
+
+.section-navbar {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-out;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.scrolled {
+    background-color: white;
+  }
+
+  .features-sub-container {
+    border-bottom: 1px solid var(--hb-dark-purple);
+  }  
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0 -20px;
+    list-style: none;
+
+    li {
+      line-height: 1;
+      margin: 0 20px;
+      transition: all 300ms ease-out;
+
+      &.active a {
+        font-weight: bold;
+
+        &::after {
+          width: 100%;
+        }
+      }
+      
+
+      a {
+        position: relative;
+        display: table-cell;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.2;
+        color: #452f53;
+        height: 3rem;
+        text-align: center;
+        vertical-align: middle;
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 0;
+          height: 1px;
+          border-bottom: 4px solid var(--hb-purple);
+          transition: width 0.3s ease 0s,left 0.3s ease 0s;
+        }
+      }
+    }
+  }
+}
+
+.section-navbar + .section {
+  margin-top: 48px;
+}
+
+.has-fixed-header > .section:not(.section-navbar):first-child {
+  padding-top: 8rem;
+}
+
+.has-fixed-header .section-navbar + .section {
+  margin-top: 0;
+  padding-top: 12rem;
+}
+
+@media screen and (max-width: 640px) {
+  .section-navbar {
+    display: none;
+  }
+
+  .section-navbar + .section {
+    margin-top: 0;
+  }
+}

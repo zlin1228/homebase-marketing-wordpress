@@ -1,0 +1,565 @@
+// add transition effect
+a, a:visited, a:hover, a:visited:hover {
+  //@include transition(all 100ms linear);
+}
+
+#content {
+  background-color: #fff;
+}
+
+.index-card {
+  margin-bottom: rem-calc(16);
+}
+
+span.author,
+time {
+  font-size: rem-calc(15);
+  color: $grey;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: rem-calc(12);
+
+  a {
+    color: #999;
+    font-weight: bold;
+    &:hover, &:focus {
+      color: $body-font-color;
+    }
+  }
+}
+
+.entry-content {
+  figure {
+    margin: 1.5rem 0;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+}
+
+p {
+  margin-bottom: 1rem !important;
+}
+
+// define content padding for later use
+$content-padding: rem-calc(50);
+
+.entry-author {
+  background-color: #fbfbfb;
+  border: none;
+  padding: rem-calc(50) rem-calc(80);
+  margin: rem-calc(50) (-($column-gutter/2));
+  .avatar {
+    margin-right: rem-calc(40);
+    margin-bottom: rem-calc(24);
+  }
+  h4 {
+    a {
+      color: #999;
+      &:hover, &:focus {
+        color: $body-font-color;
+      }
+    }
+  }
+  p {
+    color: #bbb;
+  }
+}
+
+.post header,
+.page header {
+  margin-bottom: rem-calc(20);
+}
+
+.entry-tags {
+  color: #999;
+  font-size: rem-calc(15);
+  a {
+    color: #999;
+    &:hover, &:focus {
+      color: $body-font-color;
+    }
+  }
+}
+
+.single {
+  span.author, time {
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: rem-calc(16);
+  }
+
+  .category {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    a {
+      color: $white;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.category {
+  a {
+    font-size: 0.9rem;
+  }
+
+  .post {
+    header {
+      h2 {
+        a {
+          font-size: rem-calc(19); 
+        }
+      }
+    }
+  }
+}
+
+#content {
+  padding-top: 1.5rem;
+}
+.blog {
+  .header-placement {
+    height: 112px;  
+  }
+
+  @media only screen and (max-width: 640px) {
+    .header-placement {
+      height: 123px;
+    }
+  }
+}
+.blog, .archive{
+
+  #content {
+    padding-top: 0;
+  }
+
+  article {
+    h2 {
+      line-height: normal;
+      margin-bottom: 0.5rem;
+
+      a {
+        display: block;
+        color: #000;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1.2;
+        // color: $navy;
+        // font-weight: 600;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    .category {
+      a {
+        font-weight: 700;
+        color: $navy-light;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.support-category {
+  margin-bottom: 0.8rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+
+    .strong {
+      color: $grey;
+    }
+    li {
+      a {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.feature-image {
+  background: $grey-light;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.support-contact {
+  text-align: center;
+  padding: 2.5rem 3rem;
+  border: 1px solid $keyline;
+
+  p {
+    margin-bottom: 0.8rem;
+  }
+
+  div {
+    margin: 0 auto;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 0.8rem;
+  }
+
+  a {
+    font-weight: 400;
+  }
+
+  .email {
+    background: url(../img/email.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .phone {
+    background: url(../img/phone.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .webinar {
+    background: url(../img/timesheets.png) no-repeat;
+    background-size: contain;
+  }
+}
+
+.support-footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.blog, .archive, .category {
+
+  
+
+  h2 {
+    color: #2f2f2f;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 30px;
+
+  }
+}
+
+.dd_outer {
+  z-index: 0 !important;
+}
+
+.feature-image {
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.support-category-post__heading {
+  color: $blue !important;
+}
+
+.press {
+  list-style-type: none;
+  margin-bottom: 2.5rem;
+
+  .date {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $grey;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 1.4rem;
+    .link a {
+      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+    .outlet {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.blog-post-author {
+  margin: 30px auto;
+  background-color: #f6f6f6;
+  padding: 20px 15px;
+
+  @media only screen and (max-width: 640px) {
+    text-align: center;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  img {
+    float: left;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    @media only screen and (max-width: 640px) {
+      float: none;
+      margin-bottom: 15px;
+    }
+  }
+
+  .blog-post-author-text {
+    font-size: 16px;
+    line-height: 1.35;
+
+    &.blog-post-author-text-with-photo {
+      margin-left: 95px;
+
+      @media only screen and (max-width: 640px) {
+        margin-left: 0;
+      }
+    }
+
+    strong {
+      display: block;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #2e3b4e;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.post-nav {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+
+  .prev, .next {
+    display: inline-block;
+    
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .next {
+    float: right;
+  }
+}
+
+[class*="column"]+[class*="column"]:last-child {
+  float: left !important;
+}
+
+.banner.landing-page {
+  text-align: left;
+  position: relative;
+
+  .header-image {
+    height: 350px;
+    position: absolute;
+    right: -120px;
+    bottom: -20px;
+  }
+  
+  h1, h2{
+    text-align: left;
+  }
+
+  h1 {
+    @media #{$medium-up} {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    color: white;
+
+    @media #{$medium-up} {
+      font-size: 1.4rem;
+    }
+  }
+
+  .primary-cta {
+    background: white;
+    color: $blue;
+    line-height: 60px;
+    font-weight: 600;
+
+    &:hover {
+      background: $blue;
+      color: white;
+    }
+
+    @media #{$medium-up} {
+      padding: 1rem 3.5rem;
+    }
+  }
+}
+
+.landing-page.entry-content {
+  h1 {
+    font-weight: 600;
+  }
+
+  p, li {
+    @media #{$medium-up} {
+      font-size: 1.3rem;
+    }
+  }
+
+  .primary-cta {
+    line-height: 50px;
+    @media #{$medium-up} {
+      padding: 1rem 3.5rem;
+    }
+  }
+
+  .strong {
+    @media #{$medium-up} {
+      font-size: 0.9rem;
+    }
+  }
+  .social-proof {
+    padding-top: 2rem;
+  }
+}
+
+.landing-testimonial-block {
+  text-align: center;
+  padding: 1.2rem;
+  border: 1px solid $keyline;
+  @include border-radius(4px);
+  margin-top: 1.5rem;
+
+  .quote, .owner, img {
+    text-align: center;
+  }
+
+  .quote {
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .owner {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.ninja-forms-form-wrap input, 
+.ninja-forms-form-wrap select, 
+.ninja-forms-form-wrap textarea {
+  border: 1px solid #D8D8D8 !important;
+  font-size: 16px;
+}
+
+#nf_submit_10 {
+  input {
+    float: right;
+    border: none;
+    background: $green;
+    color: $white;
+    padding: 15px 40px;
+
+    &:hover {
+      background: darken($green, 5%);
+    }
+  }
+}
+
+@media #{$medium-up} {
+  #content {
+    padding: $content-padding;
+  }
+
+  .entry-author {
+    margin: rem-calc(50) (-$content-padding);
+  }
+
+  .blog {
+    #content {
+      padding: 0;
+    }
+  }
+}
+
+@media #{$small-up} {
+  .entry-author {
+    .avatar {
+      margin-bottom: rem-calc(20);
+    }
+  }
+}
+
+@media only screen and (min-width : 992px) {
+
+  .container {
+    margin-bottom: 3rem;
+  }
+
+  .post-type-archive-support {
+    .container {
+      margin-top: 3rem;
+    }
+  }
+
+  .entry-content {
+
+    figure {
+      margin: 2rem 0;
+    }
+
+    p, a{
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-weight: 700;
+    }
+
+    h3 {
+      font-weight: 500 !important;
+    }
+  }
+
+  #content {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-template-page-noheader{
+    #content {
+      padding-top: 2.5rem;
+    }
+  }
+}

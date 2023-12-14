@@ -1,0 +1,76 @@
+.section-how-to-use {
+	padding: 60px 0;
+}
+
+.section-how-to-use .container-narrow {
+	max-width: 1017px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 54px;
+}
+
+.section-how-to-use .container-narrow .headline {
+	font-weight: 700;
+}
+
+.section-how-to-use .container-narrow .steps {
+	display: flex;
+	gap: 29px;
+}
+
+.section-how-to-use .container-narrow .steps .step {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 26%;
+	gap: 12px;
+	padding: 35px 29px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.section-how-to-use .container-narrow .steps .step .title {
+	font-weight: 700;
+	margin: 0;
+	text-align: left;
+}
+
+.section-how-to-use .container-narrow .steps .step .text {
+	margin: 0;
+	text-align: left;
+	color: var(--hb-dark-grey);
+}
+
+.section-how-to-use .container-narrow .caption {
+	margin: 0;
+	color: #000;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+@media screen and (max-width: 640px) {
+	.section-how-to-use .container-narrow {
+		padding: 0 20px;
+		gap: 0;
+	}
+
+	.section-how-to-use .container-narrow .headline {
+		font-size: 28px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.section-how-to-use .container-narrow .steps {
+		flex-direction: column;
+		margin-bottom: 26px;
+	}
+
+	.section-how-to-use .container-narrow .steps .step {
+		padding: 35px;
+	}
+
+	.section-how-to-use .container-narrow .caption {
+		max-width: 300px;
+		text-align: center;
+	}
+}

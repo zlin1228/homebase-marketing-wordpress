@@ -1,0 +1,101 @@
+.section-image-boxes {
+	padding-bottom: 100px;
+}
+
+.section-image-boxes .container .headline {
+	margin-bottom: 3rem;
+	text-align: center;
+	font-size: 22px;
+	line-height: 2rem;
+	font-weight: 800;
+	color: #252525;
+}
+
+.section-image-boxes .container .image-boxes {
+	display: flex;
+	gap: 2rem;
+}
+
+.section-image-boxes .container .image-boxes .image-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+
+.section-image-boxes .container .image-boxes .image-box .image {
+	margin-bottom: 1.5rem;
+	max-width: 250px;
+	height: auto;
+}
+
+.section-image-boxes .container .image-boxes .image-box .title {
+	margin-bottom: 0.75rem;
+	font-weight: 700;
+	color: var(--hb-dark-grey);
+}
+
+.section-image-boxes .container .image-boxes .image-box .title p {
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.section-image-boxes .container .image-boxes .image-box .text p {
+	font-size: 15px;
+	line-height: 1.5rem;
+	color: var(--hb-dark-grey);
+}
+
+.section-image-boxes:last-of-type {
+	padding: 60px 0;
+}
+
+.section-image-boxes:last-of-type .container .headline {
+	font-size: 28px;
+}
+
+.section-image-boxes:last-of-type .container .image-boxes .image-box .image {
+	max-width: 120px;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.section-image-boxes {
+		padding-bottom: 1.5rem;
+	}
+
+	.section-image-boxes .container .headline {
+		font-size: 18px;
+		line-height: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.section-image-boxes .container .image-boxes {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.section-image-boxes .container .image-boxes .image {
+		margin-bottom: 18px;
+	}
+
+	.section-image-boxes .container .image-boxes .title p {
+		font-size: 18px;
+		line-height: 1.5rem;
+	}
+
+	.section-image-boxes:last-of-type {
+		padding: 40px 0;
+	}
+
+	.section-image-boxes:last-of-type .container {
+		padding: 0 40px;
+	}
+
+	.section-image-boxes:last-of-type .container .headline {
+		font-size: 25px;
+		line-height: 2rem;
+		margin-bottom: 1.5rem;
+	}
+}

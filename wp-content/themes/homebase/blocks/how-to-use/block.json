@@ -1,0 +1,30 @@
+{
+    "name": "acf/how-to-use",
+    "title": "How to use",
+    "description": "A custom How to use block.",
+    "style": "file:/how-to-use.css",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["how to use"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "how-to-use.php"
+    }
+}

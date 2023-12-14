@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 112.17 155.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ddd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #c9b7d5;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>bullet</title>
+  <path class="cls-1" d="M51.49,26.14h0a5,5,0,0,1,7-.13l73.9,71.09a2.58,2.58,0,0,1,.07,3.65l-71.09,73.9a5,5,0,0,1-7,.13h0" transform="translate(-51.49 -22.62)"/>
+  <path class="cls-2" d="M80,26.14h0A5,5,0,0,1,87,26l73.9,71.09a2.58,2.58,0,0,1,.07,3.65l-71.09,73.9a5,5,0,0,1-7,.13h0" transform="translate(-51.49 -22.62)"/>
+</svg>

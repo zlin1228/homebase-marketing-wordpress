@@ -1,0 +1,58 @@
+label {
+  color: $gray-dark;
+  margin-bottom: 1px;
+  font-size: 0.9em;
+  font-weight: $medium;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.checkbox label, 
+.radio label{
+  padding-left: 15px;
+}
+
+.radio label, 
+.checkbox label {
+  font-size: 1em;
+  color: $navy-light;
+  min-height: 25px;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+  margin: 0;
+}
+
+.checkbox label::before, 
+.radio label::before, {
+  border-color: darken($border-color, 4%);
+  border-width: 2px;
+}
+
+.checkbox label::before, 
+.radio label::before, 
+.checkbox input[type="checkbox"], 
+.checkbox input[type="radio"] {
+  width: 25px;
+  height: 25px;
+}
+
+.checkbox label::after {
+  padding-left: 4px;
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+.radio label::after {
+  width: 17px;
+  height: 17px;
+  left: 4px;
+  top: 4px;
+}

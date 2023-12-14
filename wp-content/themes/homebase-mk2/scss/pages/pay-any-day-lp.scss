@@ -1,0 +1,886 @@
+@font-face {
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/Caveat-Regular.ttf');
+}
+
+body {
+	background-color: #441663;
+}
+
+#page {
+	background-image: url(../../images/pay-any-day-lp-bg.png);
+}
+
+header {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    padding-top: 63px;
+    height: auto;
+}
+
+.hb-emoji{
+	position: absolute;
+	z-index: 9999;
+	img{
+		width: 70px;
+    height: auto;
+    z-index: 9;
+    position: relative;
+    cursor: pointer;
+	}
+	.hb-emoji-text{
+		position: absolute;
+    top: 50px;
+    background-color: #F7EBFF;
+    width: 180px;
+    padding: 15px 15px;
+    color: #2F0949;
+    border-radius: 4px;
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: none;
+	}
+}
+.hb-emoji-left{
+	left: 0px;
+	.hb-emoji-text{
+		left: 40px;
+	}
+}
+.hb-emoji-right{
+	right: 0px;
+	.hb-emoji-text{
+		right: 40px;
+	}
+}
+
+footer {
+	.container {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    gap: 3rem;
+	    padding: 50px 0 63px;
+	    background-image: url(../../images/pay-any-day-lp-footer.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+   		background-position: bottom;
+
+	    .footer-text {
+	    	max-width: 736px;
+	    	font-size: 11px;
+			line-height: 16px;
+			text-align: center;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #DDADFF;
+	    }
+	}
+}
+
+.eoy-countdown {
+	display: none;
+}
+
+.eoy .eoy-countdown.mobile {
+    display: none;
+}
+
+.section-hero {
+	margin-bottom: 52px;
+	padding-top: 30px;
+	position: relative;
+	
+	.hb-emoji{
+		bottom: 15%;
+	}
+	.container-narrow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.headline {
+			font-weight: 900;
+			font-size: 58px;
+			line-height: 75px;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #fff;
+			margin-bottom: 60px;
+			position: relative;
+			z-index: 0;
+
+			.pad-td-1 {
+				position: relative;
+				display: inline-block;
+				z-index: 1;
+
+				&::before {
+					content: "";
+					position: absolute;
+					background-image: url(../../images/pay-any-day-lp-td-1.png);
+					width: 166px;
+					height: 166px;
+					left: -160px;
+					top: 50px;
+					z-index: -1;
+				}
+			}
+
+			.pad-td-2 {
+				position: relative;
+				display: inline-block;
+				z-index: 1;
+
+				&::before {
+					content: "";
+					position: absolute;
+					background-image: url(../../images/pay-any-day-lp-td-2.png);
+					width: 323px;
+					height: 43px;
+					left: 0;
+					top: 50px;
+					z-index: -1;
+				}
+			}
+
+			.pad-td-4 {
+				position: relative;
+				display: inline-block;
+				z-index: -1;
+
+				&::before {
+					content: "";
+					position: absolute;
+					background-image: url(../../images/pay-any-day-lp-td-4.png);
+					width: 279px;
+					height: 121px;
+					left: -22px;
+					top: -20px;
+					z-index: -1;
+				}
+			}
+		}
+
+		.subheadline {
+			font-size: 22px;
+			line-height: 32px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 60px;
+		}
+
+		.button-wrapper {
+			.button {
+				background-color: #FB1FFF;
+				border-color: #FB1FFF;
+				margin-bottom: 42px;
+				position: relative;
+
+				&:hover {
+					color: #FB1FFF;
+					background-color: #fff;
+				}
+
+				&:active,
+				&:focus {
+					color: #fff;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					background-image: url(../../images/pay-any-day-lp-td-3.png);
+					width: 189px;
+					height: 146px;
+					right: -200px;
+					top: 20px;
+				}
+			}
+		}
+
+		.img-wrapper {
+			position: relative;
+
+			.img-wrapper-sub {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	&#pad-hero-employers {
+		.container-narrow {
+			.headline {
+				.pad-td-2 {
+					&::before {
+						left: -50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.section-benefits {
+	margin-bottom: 82px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+
+		.image-boxes {
+			display: flex;
+			gap: 2rem;
+
+			.image-box {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				gap: 3rem;
+				align-items: center;
+
+				img {
+					width: 125px;
+					height: auto;
+				}
+
+				.headline {
+					font-weight: 900;
+					font-size: 28px;
+					line-height: 32px;
+					text-align: center;
+					letter-spacing: 0.02em;
+					color: #fff;
+					margin: 0;
+				}
+
+				.subheadline {
+					font-size: 22px;
+					line-height: 32px;
+					text-align: center;
+					color: #fff;
+					margin: 0;
+				}
+			}
+		}
+
+		.button-wrapper {
+			.button {
+				background-color: #FB1FFF;
+				border-color: #FB1FFF;
+
+				&:hover {
+					color: #FB1FFF;
+					background-color: #fff;
+				}
+
+				&:active,
+				&:focus {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&#pad-benefits-employers {
+		.container {
+			max-width: 768px;
+		}
+	}
+}
+
+.section-testimonial {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 150px;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		max-width: 1040px;
+		padding: 150px 177px;
+		background-repeat: no-repeat;
+    	background-size: contain;
+
+		.quote-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 3rem;
+			max-width: 686px;
+			
+			.quote {
+				font-weight: 700;
+				font-size: 28px;
+				line-height: 2rem;
+				text-align: center;
+				letter-spacing: 0.02em;
+				color: #FFC005;
+			}
+
+			.author {
+				font-family: 'Caveat';
+				font-style: normal;
+				font-size: 38px;
+				line-height: 1.5rem;
+				text-align: center;
+				color: #FFC005;
+			}	
+		}
+	}
+
+	&#pad-testimonial-employers {
+		margin-bottom: 110px;
+		
+		.container {
+			padding: 110px 152px 90px;
+
+			.quote-wrapper {
+				max-width: 736px;
+			}
+		}
+	}
+}
+
+.section-for-employers {
+	position: relative;
+	margin-bottom: 100px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 768px;
+		gap: 3rem;
+
+		.headline {
+			font-weight: 900;
+			font-size: 44px;
+			line-height: 3rem;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #FFFFFF;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background-image: url(../../images/pay-any-day-lp-for-employers.png);
+				width: 189px;
+				height: 106px;
+				left: -33px;
+				top: -94px;
+			}
+		}
+
+		.subheadline {
+			font-size: 22px;
+			line-height: 32px;
+			text-align: center;
+			color: #FFFFFF;
+		}
+
+		.button-wrapper {
+			.button {
+				background-color: #FB1FFF;
+				border-color: #FB1FFF;
+
+				&:hover {
+					color: #FB1FFF;
+					background-color: #fff;
+				}
+
+				&:active,
+				&:focus {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.section-employers-internal-survey {
+	margin-bottom: 100px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+		max-width: 1013px;
+
+		.eis-columns {
+			display: flex;
+			gap: 28px;
+
+			.eis-column {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				gap: 28px;
+				align-items: center;
+
+				.percent {
+					position: relative;
+					z-index: 0;
+
+					p {
+						font-weight: 900;
+						font-size: 44px;
+						line-height: 48px;
+						text-align: center;
+						letter-spacing: 0.02em;
+						color: #FFC005;
+						margin: 0;
+					}
+
+					img {
+						position: absolute;
+						top: -35px;
+					    left: -35px;
+					    max-width: none;
+					    z-index: -1;
+					}
+				}
+
+				.text {
+					font-size: 22px;
+					line-height: 32px;
+					text-align: center;
+					color: #fff;
+					margin: 0;
+					z-index: 1;
+				}
+
+				&:last-child {
+					.percent {
+						img {
+							top: -70px;
+							left: -80px;
+						}
+					}
+				}
+			}
+		}
+
+		.caption {
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			color: #DDADFF;
+		}
+	}
+}
+
+.section-faq {
+	margin-bottom: 50px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 768px;
+		gap: 28px;
+
+		.headline {
+			font-weight: 900;
+			font-size: 44px;
+			line-height: 3rem;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #FFFFFF;
+		}
+
+		.faq-items {
+			display: flex;
+			flex-direction: column;
+			gap: 28px;
+			width: 100%;
+
+			.faq-item {
+
+				.question {
+					background-color: #2F0949;
+					padding: 20px 32px;
+					display: flex;
+					justify-content: space-between;
+					cursor: pointer;
+
+					p {
+						font-weight: 700;
+						font-size: 15px;
+						line-height: 24px;
+						color: #FFFFFF;
+						margin: 0;
+					}
+
+					img {
+						transition: all 0.3s;
+					}
+				}
+
+				.answer {
+					background-color: #2F0949;
+					padding: 0 32px 20px;
+					font-size: 15px;
+					line-height: 24px;
+					color: #FFFFFF;
+					margin: 0;
+					display: none;
+					opacity: 0;
+					transition: all 0.3s;
+				}
+
+				&.open {
+					.question {
+						img {
+							transform: rotate(45deg);
+						}
+					}
+
+					.answer {
+						display: block;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.button-wrapper{
+			.button{
+				background-color: #FB1FFF;
+    		border-color: #FB1FFF;
+			}
+			.button:hover{
+				color: #FB1FFF;
+    		background-color: #fff;
+			}
+		}
+	}
+}
+
+.section-app-links {
+	margin: 5rem 0;
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+		.headline {
+			font-weight: 900;
+			font-size: 58px;
+			line-height: 75px;
+			text-align: center;
+			letter-spacing: 0.02em;
+			color: #fff;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	.section-hero {
+		.container-narrow {
+			.headline {
+				.pad-td-1 {
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.section-for-employers{
+		.hb-emoji{
+			top: -160px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#page {
+		background-image: none;
+	}
+
+	header {
+		padding: 23px 0 0;
+		margin: 0 0 10px;
+
+		img {
+			max-width: 130px;
+		}
+	}
+
+	.section-hero {
+		padding-top: 30px;
+
+		.hb-emoji{
+			bottom: 0px;
+		}
+
+		.container-narrow {
+			.headline {
+				font-size: 36px;
+				line-height: 40px;
+				margin-bottom: 28px;
+
+				.pad-td-2 {
+					&::before {
+						left: -60px;
+					    top: 25px;
+					    transform: scale(0.6);
+					}
+				}
+
+				.pad-td-4 {
+					&::before {
+						left: -67px;
+					    top: -41px;
+					    transform: scale(0.6);
+					}
+				}
+			}
+
+			.subheadline {
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 28px;
+			}
+
+			.button-wrapper {
+				width: 100%;
+
+				.button {
+					width: 100%;
+					margin-bottom: 63px;
+
+					&::before {
+						right: -60px;
+					    top: 130px;
+					    transform: rotate(20deg);
+					}
+				}
+			}
+		}
+
+		&#pad-hero-employers {
+			.container-narrow {
+				.headline {
+					.pad-td-2 {
+						&::before {
+							left: -100px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-benefits {
+		.container {
+			gap: 3rem;
+
+			.image-boxes {
+				flex-direction: column;
+				gap: 28px;
+
+				.image-box {
+					gap: 28px;
+
+					img {
+						width: 125px;
+					}
+
+					.headline {
+						font-size: 25px;
+					}
+
+					.subheadline {
+						font-size: 18px;
+						line-height: 24px;
+					}
+				}
+			}
+
+			.button-wrapper {
+				width: 100%;
+
+				.button {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.section-testimonial {
+		position: relative;
+		
+		.hb-emoji{
+			top: -77px;
+		}
+		
+		.container {
+			padding: 0 1rem;
+			background-size: cover;
+
+			.quote-wrapper {
+				.quote {
+					font-size: 25px;
+				}
+			}
+		}
+
+		&#pad-testimonial-employers {
+			.container {
+				padding: 0 1rem;
+			}
+		}
+	}
+
+	.section-for-employers {
+		margin-bottom: 60px;
+
+		.container {
+			gap: 28px;
+
+			.headline {
+				font-size: 29px;
+				line-height: 32px;
+
+				&::before {
+
+				}
+			}
+
+			.subheadline {
+				font-size: 18px;
+				line-height: 24px;
+			}
+
+			.button-wrapper {
+				width: 100%;
+
+				.button {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.section-employers-internal-survey {
+		margin-bottom: 60px;
+
+		.container {
+			padding: 0 2rem;
+
+			.eis-columns {
+				flex-direction: column;
+				gap: 3rem;
+
+				.eis-column {
+					.percent {
+						p {
+							font-size: 29px;
+							line-height: 2rem;
+						}
+
+						img {
+							top: -50px;
+						    left: -60px;
+						    transform: scale(0.6);
+						}
+					}
+
+					.text {
+						font-size: 18px;
+						line-height: 24px;
+					}
+
+					&:last-child {
+						.percent {
+							img {
+								top: -85px;
+    							left: -95px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-faq {
+		.container {
+			.headline {
+				font-size: 29px;
+				line-height: 2rem;
+			}
+		}
+	}
+
+	.section-app-links {
+		.container {
+			.headline {
+				font-size: 36px;
+				line-height: 40px;
+			}
+		}
+	}
+
+	footer {
+		.container {
+			padding: 10px 1rem 50px;
+			background-size: cover;
+		}
+	}
+}
+
+.section-support-footer{
+	.container{
+		max-width: 768px;
+		.text{
+			font-size: 15px;
+	    line-height: 24px;
+	    text-align: center;
+	    color: #fff;
+	    a{
+	    	color: #fff;
+		    font-weight: 400;
+		    white-space: nowrap;
+	    }
+	    a:hover{
+	    	text-decoration: underline;
+	    }
+		}
+	} 	
+}
+
+@media screen and (max-width: 640px) {
+	.section-hero {
+		.container-narrow {
+			.img-wrapper {
+				width: 140%;
+			}
+		}
+	}
+
+	.section-for-employers {
+		.container {
+			.headline {
+				&::before {
+					left: -10px;
+				}
+			}
+		}
+	}
+}

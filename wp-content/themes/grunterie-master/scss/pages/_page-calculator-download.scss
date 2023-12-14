@@ -1,0 +1,214 @@
+.calculator-download{
+    .bg{
+        background: linear-gradient(transparent, #F6F7F7);
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+    .hero{
+        padding: 50px 0;
+        
+        .row{
+            @media (min-width: 1024px) { 
+                 display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+             }
+        }
+        
+        img{
+            @media (max-width: 1024px) { 
+                margin-bottom: 30px;
+            }
+        }
+    
+        h1{
+            font-size: 32px;
+            margin-bottom: 50px;
+            
+            strong{
+                font-weight: 600;
+                color: #000;
+            }
+            
+            .purple{
+                color: $purple;
+            }
+        }
+        
+        p{
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 20px !important;
+        
+            .button{
+                padding: 9px 15px;
+                border-radius: 2px;
+                width: 100%;
+            }
+            
+            .line{
+                font-size: 0;
+                border-bottom: 1px solid #E5E6E7;
+                display: block;
+                margin: -20px 0 -10px;
+            }
+        }
+        
+        .send-email-form{      
+            form {
+                display: flex;
+            }
+            .text-wrap{
+                width: 70%;
+                margin-right: 10px;
+                height: 40px;   
+                border: 1px solid #D8D8D8 !important;
+                font-size: 16px;    
+                border-radius: 2px;
+                padding: 1rem;                  
+            }                       
+            
+            .submit-wrap{
+                margin: 0;
+                background: $white;
+                border: 1px solid #39acbf !important;
+                color: #39acbf;
+                text-transform: none;
+                font-weight: 600;
+                line-height: 1;
+                height: 40px;
+                transition: all 0.5s;
+                padding: 0 25px;
+                max-width: 100%;
+                display: inline-block;
+                border-radius: 4px;
+                text-align: center;
+                font-size: 16px;                
+                
+                &:hover{
+                    background: #39acbf;
+                    color: $white;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                }                
+            }
+        }
+    }
+    
+    .minimum-wages{
+        table{
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+            border-radius: 2px;
+            margin-bottom: 80px;
+            
+            thead{
+                tr{
+                    border: 0;
+                    outline: none ;
+
+                    th{
+                        text-align: center;
+                        background: $white;
+                        padding: 25px 0 40px;
+                        color: #39acc0;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+            
+            tbody{
+                tr{
+                    td{
+                        text-align: center;
+                        border: 0;
+                        border-right: 1px dashed #cacaca;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        color: #452F53;
+                        font-weight: 800;
+                        padding: 15px 0;
+                        
+                        a{
+                            font-size: 16px;
+                            color: #452F53;
+                            font-weight: 800;
+                        }
+
+                        &:nth-of-type(3){
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            
+            tfoot{
+                tr{
+                    background: $white;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    
+    .taxes{
+        margin-bottom: 80px;
+        
+        .row{
+            @media (min-width: 1024px) { 
+                 display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+             }
+            
+            h2{
+                font-size: 28px;
+                color: #452F53;
+                margin-bottom: 30px;
+            }
+            
+            p{
+                font-size: 14px;
+                line-height: 1.7;
+            }
+        }
+    }
+    
+    .signup-bumper-section{
+        margin: 50px auto 60px;
+        
+        form {
+            max-width: 90%;
+            margin: 0 auto 25px;
+
+            input, select{
+                @media (min-width: 768px) { 
+                    margin: 0 10px;
+                    height: 40px;
+                }
+            }
+            
+            input[type="submit"]{
+                margin: 0;
+                height: 40px;
+                line-height: 1;
+                border-radius: 5px;
+                border: 0 !important;
+                width: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media (min-width: 768px) { 
+                    width: 40%;
+                }
+            }
+        }
+    } 
+     
+}

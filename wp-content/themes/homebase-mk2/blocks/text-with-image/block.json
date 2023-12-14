@@ -1,0 +1,32 @@
+{
+    "name": "acf/text-with-image",
+    "title": "Text with image",
+    "description": "A custom Text with image block.",
+    "style": "file:/text-with-image.css",
+    "script": "block-text-with-image",
+    "category": "theme",
+    "icon": "admin-comments",
+    "keywords": ["text with image", "columns"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "alignContent": true,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "alignText": true,
+        "fullHeight": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-with-image.php"
+    }
+
+}
